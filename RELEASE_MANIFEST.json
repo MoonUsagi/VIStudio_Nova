@@ -1,0 +1,594 @@
+{
+  "Product": "VIStudio",
+  "Version": "17.0.0",
+  "ReleaseDate": "2026-11-04",
+  "ReleaseType": "MATLAB source release",
+  "MainEntry": "start_VIStudio",
+  "MeasurementEntry": "VIStudioMeasurementAppV17",
+  "ChangeDetectionIncluded": false,
+  "CompiledStandalone": false,
+  "Validation": {
+    "Tests": 52,
+    "Passed": 52,
+    "Failed": 0,
+    "Incomplete": 0,
+    "MATLAB": "26.2.0.3386108 (R2026b)",
+    "Scope": "Native measurement and UI/project regression; no large-model training or GPU validation"
+  },
+  "DocumentationLinksChecked": 42,
+  "CompatibilityAdapters": [
+    "src/VIStudio.m",
+    "src/VIStudioV16.m"
+  ],
+  "Files": [
+    {
+      "Path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "Bytes": 565,
+      "SHA256": "16027db76e540190d3b36dff228d20ede993b28494d9500e36e951c1882c14bc"
+    },
+    {
+      "Path": ".gitignore",
+      "Bytes": 321,
+      "SHA256": "7a0100af6b5a428d8c398580b9b3d77800804008066a952aff0ddab048e76cc9"
+    },
+    {
+      "Path": "CHANGELOG.md",
+      "Bytes": 1111,
+      "SHA256": "0722e655772d2da05ef142a1d37a3d58c280cf15b86afb7ce2acb9b60e6d36e2"
+    },
+    {
+      "Path": "CONTRIBUTING.md",
+      "Bytes": 1031,
+      "SHA256": "0a82d277c380af09053eb940dd6b57671681a9e831abc0f65a38453f5cd583f7"
+    },
+    {
+      "Path": "docs/images/help-english.png",
+      "Bytes": 183429,
+      "SHA256": "240858031a15b3117b6e60454e3b441211bce76f16dcd19f0227c47ad7505735"
+    },
+    {
+      "Path": "docs/images/home-workspaces.png",
+      "Bytes": 222412,
+      "SHA256": "c51f3efdaa02824ae0c8fb6be0041c3ba6c9380b433643170f864374392ec4e6"
+    },
+    {
+      "Path": "docs/images/logo.png",
+      "Bytes": 1168035,
+      "SHA256": "73e583e2130d84ecacb87557813d71942499248c44bafaf8e7a1b376af6bbf75"
+    },
+    {
+      "Path": "docs/images/measurement-calibrated.png",
+      "Bytes": 82703,
+      "SHA256": "8e99268bf7ef8340062f15f6f16ded275ac29e82250c772bf3294c7da7046f72"
+    },
+    {
+      "Path": "docs/images/measurement-no-edge.png",
+      "Bytes": 75734,
+      "SHA256": "0a561de9739c20262a0c1f8083969cbf73a1674ce492971e5133cc8ac4d691de"
+    },
+    {
+      "Path": "docs/images/measurement-overlay.png",
+      "Bytes": 25003,
+      "SHA256": "cf2b37eac4d9c2a17637ef7eb0c51393288a72721faf6aed373c4bf968120f73"
+    },
+    {
+      "Path": "docs/images/measurement-workspace.png",
+      "Bytes": 88051,
+      "SHA256": "00fa44b18d1954cfa72dc3a8b7ab1edf20e7befbfccd92a415ff2b7ee6f199a7"
+    },
+    {
+      "Path": "docs/USER_GUIDE.md",
+      "Bytes": 10521,
+      "SHA256": "522e3170d1ef75f2d133728bfb82f420fb066108e5d016acb4daf396edaac673"
+    },
+    {
+      "Path": "docs/VALIDATION.md",
+      "Bytes": 3027,
+      "SHA256": "3d3380a2df1173a83a6ec020a7aaff12553c983ccc3cfe1209facf7a8a849d6b"
+    },
+    {
+      "Path": "docs/VISION_WORKFLOWS.md",
+      "Bytes": 7145,
+      "SHA256": "a3bc6a20d16e5735a69f47c29dde4ce6cc2c5470297c7348e4ca848e8baed79a"
+    },
+    {
+      "Path": "examples/demo_measurement.m",
+      "Bytes": 161,
+      "SHA256": "5cca9e5a3a2b29f0f8c8fd44f1ac79febe33b319dec71a37ed6f9ee69be1e7c9"
+    },
+    {
+      "Path": "LICENSE_STATUS.md",
+      "Bytes": 624,
+      "SHA256": "1d3ebb657d2805b872a825b89eed0daee62a67773c49fcd3a39a9c2504cbb95f"
+    },
+    {
+      "Path": "README.en.md",
+      "Bytes": 9080,
+      "SHA256": "422943758389b7825dcff6b133c618f4ee7dbf3bc39166658eb556f23988a6ee"
+    },
+    {
+      "Path": "README.md",
+      "Bytes": 8902,
+      "SHA256": "ca07fb687ba209bed27bd94b378b51f00094d935e230f503f2d087c81410313c"
+    },
+    {
+      "Path": "run_validation.m",
+      "Bytes": 697,
+      "SHA256": "0fa83fa62747c2a27bf4c6dbd5fb1ced0529a91b85dfae032ab99d70a6ef7aae"
+    },
+    {
+      "Path": "src/freezeNetwork.m",
+      "Bytes": 1543,
+      "SHA256": "bab4ec3feed7d692d77d2b1ac8d41378c061e55e177d3ff57c9858f66a2f322f"
+    },
+    {
+      "Path": "src/networkHead.m",
+      "Bytes": 1667,
+      "SHA256": "9bfc31b542b890204748ebcdc1c53f88a86dbe7d7fb05b9c8280686643e6f677"
+    },
+    {
+      "Path": "src/tools/vi_coco_bridge_v15.py",
+      "Bytes": 1875,
+      "SHA256": "da77819374a0c84958ba34cd35f13d0f9f0e1459758aa2dc16da1beba0c9d45c"
+    },
+    {
+      "Path": "src/V14_Assets/anomaly.png",
+      "Bytes": 4871,
+      "SHA256": "adf10e470b06a55a5e5b24c494b7f483e5927af2711daa9f0787a12467d9be6b"
+    },
+    {
+      "Path": "src/V14_Assets/classification.png",
+      "Bytes": 4772,
+      "SHA256": "c2bcc9f32f93320095b8cd6193ab4914d20b60491e4722ee255c3863925e49c3"
+    },
+    {
+      "Path": "src/V14_Assets/detection.png",
+      "Bytes": 2742,
+      "SHA256": "b4bfddd3dead98006ad7acd0b38324eedbe47ebab2aa4d935f0ed3d72b952200"
+    },
+    {
+      "Path": "src/V14_Assets/hero.png",
+      "Bytes": 7265,
+      "SHA256": "1e690dcd85c3be672b856c29f26c4854b5bc9f1296cc56321daad78b356dfb27"
+    },
+    {
+      "Path": "src/V14_Assets/instance.png",
+      "Bytes": 4214,
+      "SHA256": "e183ffab081cea2e18650051770c6efd04ed2b5dba9d7e69ccc34d2dadcab166"
+    },
+    {
+      "Path": "src/V14_Assets/keypoints.png",
+      "Bytes": 8144,
+      "SHA256": "eee0b2c5b920a0ce29b1c49809435bd8e0873032ef618cd0f898aee97cbe9d1d"
+    },
+    {
+      "Path": "src/V14_Assets/labeler.png",
+      "Bytes": 4635,
+      "SHA256": "cb7339dcb3d68f5e672d095c8044e64207e3a1c7fb74058ab280f33a05c61ee0"
+    },
+    {
+      "Path": "src/V14_Assets/quality.png",
+      "Bytes": 2669,
+      "SHA256": "a3ce05873705b66f9adb7852738865c6bddfc4cfba1f11f5418a5a18de7db30b"
+    },
+    {
+      "Path": "src/V14_Assets/semantic.png",
+      "Bytes": 5492,
+      "SHA256": "f44b782f744008eb921f03613968e50aee5a4757ac157ad3046bc9a82854270d"
+    },
+    {
+      "Path": "src/V17_Assets/measurement.png",
+      "Bytes": 2132,
+      "SHA256": "78b232c8373d2278aa3a8d434a37a2f578d9e9a166efcab14f4e78ce3bf51cf5"
+    },
+    {
+      "Path": "src/VIStudio.m",
+      "Bytes": 46,
+      "SHA256": "3276575a507cb6427efd40291c5a3a139ef9ae98267acad19f46f42050ab8c1c"
+    },
+    {
+      "Path": "src/VIStudio_Brand_V1/vistudio-logo-navy-v1.png",
+      "Bytes": 1168035,
+      "SHA256": "73e583e2130d84ecacb87557813d71942499248c44bafaf8e7a1b376af6bbf75"
+    },
+    {
+      "Path": "src/VIStudioAnnotationDataV12.m",
+      "Bytes": 25577,
+      "SHA256": "834c356ec5e1b702615178f1bbeaf653866d1cf97c7624fec2bb2afb6f107cb5"
+    },
+    {
+      "Path": "src/VIStudioAnnotationDataV15.m",
+      "Bytes": 30629,
+      "SHA256": "ab50f6c40b167ea45abed425b8318c2242fc1c0138303a8255dcabb27590831d"
+    },
+    {
+      "Path": "src/VIStudioAnnotationQualityV15.m",
+      "Bytes": 5661,
+      "SHA256": "635b6971d3fe4f4a3742efaef7f024bc47038eb8bbf3a791463d02d4f0f795ac"
+    },
+    {
+      "Path": "src/VIStudioAnomalyApp.m",
+      "Bytes": 32360,
+      "SHA256": "5a44e8d6bce7d49851838b808f35c96ee69cc506c6ecaf601325989df89330b5"
+    },
+    {
+      "Path": "src/VIStudioAnomalyAppV3.m",
+      "Bytes": 242,
+      "SHA256": "151b66d57e1b31340be587973f5ccddd2848b9fc2b3c12f7963ef9d6e1f3fa93"
+    },
+    {
+      "Path": "src/VIStudioClassificationAppV3.m",
+      "Bytes": 263,
+      "SHA256": "328101e02d8d2409c4d74c8495f65a10d6821dce0df1c644cd321b83ab0eec27"
+    },
+    {
+      "Path": "src/VIStudioCocoV15.m",
+      "Bytes": 11563,
+      "SHA256": "b403e469abb0cb8b319480bfd0ea3879289e0a77a79eb5252a86d5ec447101af"
+    },
+    {
+      "Path": "src/VIStudioData.m",
+      "Bytes": 8115,
+      "SHA256": "0fca529428011d50fd593eaa7945bc231e08467ef9cc3bc85cbf3cade38e62d6"
+    },
+    {
+      "Path": "src/VIStudioDataHealthV8.m",
+      "Bytes": 9799,
+      "SHA256": "7f17a9ddee0ccce9c5d4f78736d4b5038a9d9401cc98d51e327604039170e969"
+    },
+    {
+      "Path": "src/VIStudioDatasetPaneV9.m",
+      "Bytes": 8449,
+      "SHA256": "cf002e7f652eac107ca9ca503838078df09dcdacbcaf4d0cb7a90263db46d9ee"
+    },
+    {
+      "Path": "src/VIStudioDatasetV9.m",
+      "Bytes": 12630,
+      "SHA256": "b316fd00f29f2e186e1f048b106152c6263c6eb4d528adf14e9e672ea3052ee8"
+    },
+    {
+      "Path": "src/VIStudioDefectPaneV10.m",
+      "Bytes": 12005,
+      "SHA256": "80f617250118b8495b0172551cb8d08d41eb7f628c3df7c829e37f789bc6d3c6"
+    },
+    {
+      "Path": "src/VIStudioDefectsV10.m",
+      "Bytes": 15479,
+      "SHA256": "2af18215f1cc7f6e2ee0db56389cd9bdce07182e9e36fcba2d53dfb311ef05c5"
+    },
+    {
+      "Path": "src/VIStudioDefectsV11.m",
+      "Bytes": 5295,
+      "SHA256": "6794ba4ac6c8ded0ae49815b3f0c1a8c46e99ae515532a923a88817c68dbd833"
+    },
+    {
+      "Path": "src/VIStudioEvaluationV15.m",
+      "Bytes": 14504,
+      "SHA256": "4404055fe34d78b0d80a524b73dd63ea7bd813f8fc5fd5e2997b028e1ea575c2"
+    },
+    {
+      "Path": "src/VIStudioEvaluationV16.m",
+      "Bytes": 14712,
+      "SHA256": "5ec060c3cd37daf8bc415805455a7caf10af59238d5442e294297acc28fbeb28"
+    },
+    {
+      "Path": "src/VIStudioExperimentsV9.m",
+      "Bytes": 9591,
+      "SHA256": "affea6967afd28276e0778dbd4066a788c82b76c47ba9a5aab368edc92482274"
+    },
+    {
+      "Path": "src/VIStudioGeometryV11.m",
+      "Bytes": 5582,
+      "SHA256": "4dbf4f1dc22559faeff1470bd93fcb90ce2d14d3012196e5bc709d27605822a7"
+    },
+    {
+      "Path": "src/VIStudioGuideV17.m",
+      "Bytes": 1105,
+      "SHA256": "7e2ba1bdf22a47a6cf500751742f5c6ed0ca865afd0fe198cc71001b1511a9a3"
+    },
+    {
+      "Path": "src/VIStudioHardSamplesV11.m",
+      "Bytes": 7959,
+      "SHA256": "2ed79fa55fe504b1792cf4f1992642b04d7146180c748f387d28078588505b7d"
+    },
+    {
+      "Path": "src/VIStudioHealthPaneV8.m",
+      "Bytes": 4855,
+      "SHA256": "24a4a964479dba7761f9927e0d4d0f270aba275acd7aa30dc929a0292a32b1bb"
+    },
+    {
+      "Path": "src/VIStudioHelpV16_1.m",
+      "Bytes": 5472,
+      "SHA256": "8f3faf73436d6a4426a12110a1d3c7f8f783776a8cfbf00fe9cc614cf0d03cdd"
+    },
+    {
+      "Path": "src/VIStudioHomeStateV16.m",
+      "Bytes": 3541,
+      "SHA256": "80a6a57bfbb1e8d0b9b6a200551f0b1ee692f37ad5769ba81ca83b5e8d6f1d0f"
+    },
+    {
+      "Path": "src/VIStudioHomeV16.m",
+      "Bytes": 18259,
+      "SHA256": "dfc490f87a991a42254b3a97ffbc458a206e57e09a3c5c8eaca4d1c36e7b0d01"
+    },
+    {
+      "Path": "src/VIStudioHomeV17.m",
+      "Bytes": 18340,
+      "SHA256": "580204a312050da83fe2ab712ab5c1a1c717bd4ff342f5c3f8c1333b2d5baac0"
+    },
+    {
+      "Path": "src/VIStudioInferenceV11.m",
+      "Bytes": 6000,
+      "SHA256": "c9571aa9d14ea9f40056bf8995752ef357fdea40af2702ff477c84afedc32c55"
+    },
+    {
+      "Path": "src/VIStudioInferenceV13.m",
+      "Bytes": 7186,
+      "SHA256": "f6fe6442352e08e96265d1b4d238db9abe1c3228d2ead2840f440223ffb93564"
+    },
+    {
+      "Path": "src/VIStudioLabelerV16.m",
+      "Bytes": 70790,
+      "SHA256": "8b0b8cd36d763bf9a170ffe205271ef3e2eb35e56b9420bbf6cb37bd5ebbd55b"
+    },
+    {
+      "Path": "src/VIStudioMasksV11.m",
+      "Bytes": 14634,
+      "SHA256": "46caedd26da93ba2cc567fa58969c283e7c837cdab189746625158d15eaa345c"
+    },
+    {
+      "Path": "src/VIStudioMeasurementAppV17.m",
+      "Bytes": 19742,
+      "SHA256": "7c1ff75a40fb4d01b695da0e57d18fff68fc99babb77bfb69ce997c137d4ed31"
+    },
+    {
+      "Path": "src/VIStudioMeasurementDemoV17.m",
+      "Bytes": 868,
+      "SHA256": "e5baab71219a201e8d8574962a35b638f3fb6393df9fce85f673eb107cbd2d71"
+    },
+    {
+      "Path": "src/VIStudioMeasurementV17.m",
+      "Bytes": 23601,
+      "SHA256": "97fffe920013ee89d8ca6a265cb01107e036ec4f97a06eb8b7a1a5054b1d4027"
+    },
+    {
+      "Path": "src/VIStudioModelIOV8.m",
+      "Bytes": 4702,
+      "SHA256": "d664e3d5f42739992f3ffaab82e15163275c9cf4acd8376c5894b5e9c0a4ce00"
+    },
+    {
+      "Path": "src/VIStudioModelViewerV7.m",
+      "Bytes": 12791,
+      "SHA256": "920339efc9a0449273ce9ad885eb6c086a9ca8367c82f6725fa7419779f4d05a"
+    },
+    {
+      "Path": "src/VIStudioModelVisualsV7.m",
+      "Bytes": 10701,
+      "SHA256": "38e79f23e6952d1e68562f2712e29f78e6ea4fe3704d2316b47d7465b60b3810"
+    },
+    {
+      "Path": "src/VIStudioObjectDetectionAppV3.m",
+      "Bytes": 260,
+      "SHA256": "6f71294e694fdec879b53960df6e43b2ab7fba116b31bd27c0f3eb7756abcdc9"
+    },
+    {
+      "Path": "src/VIStudioPipelineV13.m",
+      "Bytes": 11302,
+      "SHA256": "fa42018e420bc4d277a5bfa5b9b9a5cf25e14d11a4c9fd9dcea5a8fc56769f00"
+    },
+    {
+      "Path": "src/VIStudioPoseV15.m",
+      "Bytes": 6274,
+      "SHA256": "5f805944b19f60a9af73b58af9511b7f1bed0bd1c543ae299e3cbb639559d39c"
+    },
+    {
+      "Path": "src/VIStudioPreparedDataV9.m",
+      "Bytes": 10055,
+      "SHA256": "ca0ecd5b1525ddb254344ab46349d60357b25ce745b92a5bc0f9b22b1cd0a8e0"
+    },
+    {
+      "Path": "src/VIStudioProjectV16.m",
+      "Bytes": 15526,
+      "SHA256": "845bd3e3b027c1f82b08b2676aa3ebddc4af43b04a920ab85dce14eb5fb647dc"
+    },
+    {
+      "Path": "src/VIStudioQualityV11.m",
+      "Bytes": 3808,
+      "SHA256": "6f85ba6d64d3107eb93d66e77de76c49d00d59f90786dbb5feaefe2acb851dd6"
+    },
+    {
+      "Path": "src/VIStudioRecoveryV8.m",
+      "Bytes": 5638,
+      "SHA256": "9994a400b018f5fbf2834902369e1f400606bdb0d90d1b9f180db11e266a47a7"
+    },
+    {
+      "Path": "src/VIStudioSemanticAppV16.m",
+      "Bytes": 1959,
+      "SHA256": "d5efe9440376fb2fbda43010be2ca9039175b72266b4c0f983ecce9372371114"
+    },
+    {
+      "Path": "src/VIStudioSemanticPaneV16.m",
+      "Bytes": 20865,
+      "SHA256": "845cf25d64ab878741dde81e492d4c30c35cb1b4f528d9d53634f8205ddd9aa0"
+    },
+    {
+      "Path": "src/VIStudioSemanticTilesV13.m",
+      "Bytes": 7703,
+      "SHA256": "4cdb6032de46e6c4d9570e30c949beb445c3ee7f1ab5f47aa7224a6a94ff9e70"
+    },
+    {
+      "Path": "src/VIStudioSemanticV12.m",
+      "Bytes": 20587,
+      "SHA256": "8254f904dd8a3dd637aa03bff1ee6850d3fc71afd865ae9cd471d78c47ee637c"
+    },
+    {
+      "Path": "src/VIStudioSemanticV13.m",
+      "Bytes": 22865,
+      "SHA256": "4ad6bd1bd4e8f6141b32b1e4f116722040cb372e55cd135312523daa264c0608"
+    },
+    {
+      "Path": "src/VIStudioStructuredV15.m",
+      "Bytes": 10368,
+      "SHA256": "ebe2c3bdff8333f2f7487d8f6021db06d68c28bddcb50f5be2cb08017fd30aac"
+    },
+    {
+      "Path": "src/VIStudioTaskAppV16.m",
+      "Bytes": 837,
+      "SHA256": "3cee8f7346ca9eb7353470676bd6c90e29ee89c70a46213481488c0903c7e4b2"
+    },
+    {
+      "Path": "src/VIStudioTaskModelsV15.m",
+      "Bytes": 9928,
+      "SHA256": "126405e94abe935224eabba4eec4be12c065df092b0c1f5ed3630b8956c7ab9c"
+    },
+    {
+      "Path": "src/VIStudioTaskPaneV16.m",
+      "Bytes": 20382,
+      "SHA256": "284828c744d807175f8adc17daa4b92333ee9119f09c7ef6e3cf470ee6581797"
+    },
+    {
+      "Path": "src/VIStudioTeacherStudentV6.m",
+      "Bytes": 6525,
+      "SHA256": "8e02253e08832b7e964d8e30a537c2650bbee35d84dea2a03dae4a666ddfc6bb"
+    },
+    {
+      "Path": "src/VIStudioTeacherStudentV8.m",
+      "Bytes": 7522,
+      "SHA256": "cfd0f77034909fe43347cedb87f62b34e9f7daf33f575f14ab790b590d39314b"
+    },
+    {
+      "Path": "src/VIStudioThemeV16.m",
+      "Bytes": 2685,
+      "SHA256": "629224288194059abdcefd696e218ce79f41fd560ccb6b0baca2a424b4239148"
+    },
+    {
+      "Path": "src/VIStudioToolsV3.m",
+      "Bytes": 7748,
+      "SHA256": "7b371699c873657f5a1c69c2f20a0c5ea66d4e9e09646a6894c6e6f12ca61828"
+    },
+    {
+      "Path": "src/VIStudioTrainingAppV4.m",
+      "Bytes": 25325,
+      "SHA256": "cd4c161afd7601395b0e5f63ee329df2e816267857f9ec284b85d8499017236a"
+    },
+    {
+      "Path": "src/VIStudioTrainingBackendV9.m",
+      "Bytes": 11300,
+      "SHA256": "a69c4f2cc3c1354c8bb4d9badade6425d03ef9ec853796be2c01af83e4cd1479"
+    },
+    {
+      "Path": "src/VIStudioTrainingDataV4.m",
+      "Bytes": 3405,
+      "SHA256": "fef934c09fe0dfac42cd7112f3e39a8fa1fb56d59ab2aeb8d55456a536e5f90c"
+    },
+    {
+      "Path": "src/VIStudioTrainingOptionsV6.m",
+      "Bytes": 3492,
+      "SHA256": "fb1b0ef854ae588c2781f1ca0573d00e68f9a3d2d8924a8df11e133b4b01b17f"
+    },
+    {
+      "Path": "src/VIStudioTrainingPaneV9.m",
+      "Bytes": 36599,
+      "SHA256": "4cac6a134486b9d53453af4cb6e822c79762fdfc0449d3de9fa8be675d28f26d"
+    },
+    {
+      "Path": "src/VIStudioTrainingRunV9.m",
+      "Bytes": 10898,
+      "SHA256": "a61db0d03b20c9b895dbbb204d0749b07cd576a9b71f20122c0420457f0bd904"
+    },
+    {
+      "Path": "src/VIStudioV16.m",
+      "Bytes": 200,
+      "SHA256": "a5e6ab94bde268c027047c428a81e02cd9fad3158d4f0e2c6d379a97cd047195"
+    },
+    {
+      "Path": "src/VIStudioV17.m",
+      "Bytes": 329,
+      "SHA256": "e5ba43d780f440f80a0985fba999a66276b5b2a77d06021bbd6be005a2f2de3a"
+    },
+    {
+      "Path": "src/VIStudioVisionAppV16.m",
+      "Bytes": 129908,
+      "SHA256": "d77ff021917d70ae826d099122651801f8c4626145a9ccc1fe4b9576e139a08d"
+    },
+    {
+      "Path": "src/VIStudioVisionAppV3.m",
+      "Bytes": 83103,
+      "SHA256": "47303e6ef66bd840c987ce632769e109da070b2a2e23b95cda3614e7c78e4247"
+    },
+    {
+      "Path": "src/VIStudioWorkbenchV16.m",
+      "Bytes": 41024,
+      "SHA256": "2b19cb02e53088628846ee4379e11beb7a167a80dad11a6dcb4d842f29f7929a"
+    },
+    {
+      "Path": "src/VIStudioWorkspaceV16.m",
+      "Bytes": 7300,
+      "SHA256": "8c2cea7494c61d8b4f71169f95ce3f6d705704a35d5fd44eb30bb6a6ace6ae79"
+    },
+    {
+      "Path": "start_VIStudio.m",
+      "Bytes": 122,
+      "SHA256": "68cd6e3a350c159cdf530ef0d411965f4333f972340cf30e621aa657a0fbc041"
+    },
+    {
+      "Path": "tests/testMeasurementV17.m",
+      "Bytes": 10208,
+      "SHA256": "7501fe4ae7ea0eb76ea6cd88cbf1291143d918ae7c44c9122003b368cfce5b01"
+    },
+    {
+      "Path": "tests/testProjectHubV16.m",
+      "Bytes": 10077,
+      "SHA256": "db67508892db1776ed1d9e8a56eee74486f6b2b9f83be692d0165ce0ff503c23"
+    },
+    {
+      "Path": "tests/testStructuredV16Regression.m",
+      "Bytes": 11664,
+      "SHA256": "b76171b2b5d4f7de4d3bf0f61cbc70c1c7b394f74db4cf8723b89d7c7b108045"
+    },
+    {
+      "Path": "THIRD_PARTY_NOTICES.md",
+      "Bytes": 1323,
+      "SHA256": "bd2fb04a0a72b7736691fd736fa4645aafc25942c4f7f68b7b666cbc61a2c5c1"
+    },
+    {
+      "Path": "validation/distribution-cleanup.json",
+      "Bytes": 182,
+      "SHA256": "51013f2816a269b22fe77331075e4058cba3b60944b3b2613af54eb3af43c487"
+    },
+    {
+      "Path": "validation/package-smoke.json",
+      "Bytes": 233,
+      "SHA256": "97540b48c948201d1ff073c0b087b93a3ff70060a9f19dd7c8798be879305714"
+    },
+    {
+      "Path": "validation/source-preservation.json",
+      "Bytes": 61,
+      "SHA256": "90fb9ffb0566226002c00ba9540ab6f4e5d93f5b3a0ef6cedf18136102623b5a"
+    },
+    {
+      "Path": "validation/summary.json",
+      "Bytes": 215,
+      "SHA256": "5a77fb3097e52a82bd17ac2c9754ad985cb58b1ca9bc9c7e7c33e5c0c69d3e1b"
+    },
+    {
+      "Path": "verify_release.m",
+      "Bytes": 1077,
+      "SHA256": "df6d4f70afe442bace730e9f8d7762161dfeeb49469a5acd45eb9cd2c5e0868d"
+    },
+    {
+      "Path": "VERSION",
+      "Bytes": 8,
+      "SHA256": "4bc636724baf4828830f07afc5c5c0fa636ee13f0faf7fea70a1f584bd417183"
+    }
+  ],
+  "Distribution": "Current release and required dependencies only",
+  "Cleanup": {
+    "UnusedSourceFilesRemoved": 72,
+    "ArchivedDocumentsRemoved": 1,
+    "SourceFilesRemaining": 70,
+    "RequiredVersionedBackendsRetained": true,
+    "Tests": 52,
+    "Passed": 52
+  }
+}

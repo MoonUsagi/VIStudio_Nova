@@ -1,0 +1,29 @@
+# Local data, models and executable state
+**/V*_User/
+**/V*_Recovery/
+**/V*_Models/
+**/V*_HardSamples/
+**/V*_Prepared/
+**/V*_Runs/
+**/V*_Preview/
+Dataset/
+datasets/
+models/
+outputs/
+reports/
+*.mat
+*.asv
+*.log
+*.m~
+*.mex*
+*.p
+__pycache__/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.pem
+*.key
+# Distribution outputs
+*.zip
+releases/
