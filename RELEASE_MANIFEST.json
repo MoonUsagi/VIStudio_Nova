@@ -15,7 +15,7 @@
     "MATLAB": "26.2.0.3386108 (R2026b)",
     "Scope": "Native measurement and UI/project regression; no large-model training or GPU validation"
   },
-  "DocumentationLinksChecked": 42,
+  "DocumentationLinksChecked": 124,
   "CompatibilityAdapters": [
     "src/VIStudio.m",
     "src/VIStudioV16.m"
@@ -40,6 +40,71 @@
       "Path": "CONTRIBUTING.md",
       "Bytes": 1031,
       "SHA256": "0a82d277c380af09053eb940dd6b57671681a9e831abc0f65a38453f5cd583f7"
+    },
+    {
+      "Path": "docs/images/badges/checks.svg",
+      "Bytes": 463,
+      "SHA256": "a8cdf15314280aa4c22fc947d4c71224fbdff6a468ad11dbc565b2f0d095c39b"
+    },
+    {
+      "Path": "docs/images/badges/matlab.svg",
+      "Bytes": 454,
+      "SHA256": "a91a0d9a46b7a3d28b2f41a866d5adaddcb0b91ceefc81f711a6c3cd5064dd61"
+    },
+    {
+      "Path": "docs/images/badges/source.svg",
+      "Bytes": 472,
+      "SHA256": "e1aac44694f318e780624a33e0c98ce9b240c7deb38901439dd5980a1a29d2f8"
+    },
+    {
+      "Path": "docs/images/badges/version.svg",
+      "Bytes": 434,
+      "SHA256": "f45dcc91742ed5c94efdab09fd1da1f24b97d872c505a018ac4a69445404b671"
+    },
+    {
+      "Path": "docs/images/features/ai-assist.png",
+      "Bytes": 375685,
+      "SHA256": "6ff9a09578406b94cf58ba33eac0d1d93e586866f5325acd941285cad77b271f"
+    },
+    {
+      "Path": "docs/images/features/annotation-quality.png",
+      "Bytes": 45421,
+      "SHA256": "0870fadc14b3997bed805cc47f48ac5e6a3a0ea5e0fc2dc906fee8f02a73b4f1"
+    },
+    {
+      "Path": "docs/images/features/anomaly.png",
+      "Bytes": 175152,
+      "SHA256": "de7e88c51e8155cb75091667002c7c59021e95ae027a431beca8fe37cf8887ab"
+    },
+    {
+      "Path": "docs/images/features/classification.png",
+      "Bytes": 183482,
+      "SHA256": "fe77c9532a1d0ab6014239445fddf96a2b9cec3b769d2383c43d3f1300025bd6"
+    },
+    {
+      "Path": "docs/images/features/detection.png",
+      "Bytes": 322182,
+      "SHA256": "ddd1773c8d0d06014746cc152099fdc897eb02e1251ec4d139388f5388550192"
+    },
+    {
+      "Path": "docs/images/features/instance.png",
+      "Bytes": 121867,
+      "SHA256": "6b2a05f84e237f037c6a65176f325823ac122b5d50b7b440804412d102c3cff6"
+    },
+    {
+      "Path": "docs/images/features/keypoints.png",
+      "Bytes": 391784,
+      "SHA256": "ca3c983f3181e496c59ae487a46da0f031bfda8693eae39812516a03086501a2"
+    },
+    {
+      "Path": "docs/images/features/measurement.png",
+      "Bytes": 81438,
+      "SHA256": "553154cbab55f86cf69c461946fc49fab3f441123dd31281f53bfbe9bd2875e9"
+    },
+    {
+      "Path": "docs/images/features/semantic.png",
+      "Bytes": 133478,
+      "SHA256": "e7b88052567b9f40c8efbfefc6024b977922769a615aacee32de974f7396e36b"
     },
     {
       "Path": "docs/images/help-english.png",
@@ -77,6 +142,11 @@
       "SHA256": "00fa44b18d1954cfa72dc3a8b7ab1edf20e7befbfccd92a415ff2b7ee6f199a7"
     },
     {
+      "Path": "docs/images/project-home.png",
+      "Bytes": 141104,
+      "SHA256": "6d571d42653b79ae970a3d414926b73c9499286c68beec50883d080f5de23ad1"
+    },
+    {
       "Path": "docs/USER_GUIDE.md",
       "Bytes": 10521,
       "SHA256": "522e3170d1ef75f2d133728bfb82f420fb066108e5d016acb4daf396edaac673"
@@ -103,13 +173,13 @@
     },
     {
       "Path": "README.en.md",
-      "Bytes": 9080,
-      "SHA256": "422943758389b7825dcff6b133c618f4ee7dbf3bc39166658eb556f23988a6ee"
+      "Bytes": 19200,
+      "SHA256": "f66fa9473a25eb52bb887998f512943af4f3437e44e60224822dbf142cd8560d"
     },
     {
       "Path": "README.md",
-      "Bytes": 8902,
-      "SHA256": "ca07fb687ba209bed27bd94b378b51f00094d935e230f503f2d087c81410313c"
+      "Bytes": 30668,
+      "SHA256": "af142fe4f1410cf60e09fdffb5f457629ed399f06d217ef835bdbe6fc44f62fc"
     },
     {
       "Path": "run_validation.m",
@@ -590,5 +660,11 @@
     "RequiredVersionedBackendsRetained": true,
     "Tests": 52,
     "Passed": 52
-  }
+  },
+  "ReadmeLanguages": [
+    "zh-Hant",
+    "en"
+  ],
+  "ReadmeLayout": "Complete Chinese and English sections, with language navigation",
+  "ReadmeFocus": "Centered bilingual brand header, homepage first, nine illustrated workspaces and full user guide"
 }

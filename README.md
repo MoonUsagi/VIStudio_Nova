@@ -1,10 +1,112 @@
-<p align="center"><img src="docs/images/logo.png" alt="VIStudio" width="520"></p>
+<p align="center">
+  <img src="docs/images/logo.png" alt="VIStudio logo" width="360">
+</p>
+<h1 align="center">VIStudio Nova</h1>
+<p align="center">
+  <strong>A MATLAB visual inspection studio — annotation, training, evaluation and measurement</strong><br>
+  <strong>MATLAB 視覺檢測工作台 — 標記、訓練、評估與影像量測</strong>
+</p>
+<p align="center">
+  <img src="docs/images/badges/matlab.svg" alt="Tested with MATLAB R2026b">
+  <img src="docs/images/badges/version.svg" alt="Version 17.0.0">
+  <a href="docs/VALIDATION.md"><img src="docs/images/badges/checks.svg" alt="52 of 52 packaged checks passed"></a>
+  <img src="docs/images/badges/source.svg" alt="MATLAB source distribution">
+</p>
+<p align="center"><a href="#繁體中文">繁體中文</a> · <a href="#english">English</a> · <a href="README.en.md">English-only README</a></p>
 
-# VIStudio V17 — 視覺檢測工作台 / Visual Inspection Studio
+---
 
-**[繁體中文](#繁體中文) · [English](#english) · [English-only README](README.en.md)**
+Build a project from the start page, then follow **Data → Label → Train → Evaluate → Inspect** across nine workspaces.
 
-[視覺工作流程 / Vision workflows](docs/VISION_WORKFLOWS.md) · [量測手冊 / Measurement guide](docs/USER_GUIDE.md) · [更新紀錄 / Release notes](CHANGELOG.md) · [驗證範圍 / Validation](docs/VALIDATION.md)
+從起始頁建立專案，依 **資料 → 標記 → 訓練 → 評估 → 檢測** 串接九大工作區。
+
+**Contents · 目錄：** [Start page 起始頁](#start-page) · [Nine workspaces 九大功能](#nine-workspaces) · [Install & launch 安裝啟動](#install) · [Workflows 操作流程](docs/VISION_WORKFLOWS.md) · [Validation 驗證](docs/VALIDATION.md) · [Release notes 更新紀錄](CHANGELOG.md)
+
+<a id="start-page"></a>
+
+## 起始頁面 / Start page
+
+![VIStudio project homepage / 專案起始頁](docs/images/project-home.png)
+
+**從專案開始：**新增／開啟專案，連結影像、標記、模型與報告，再進入對應工作區。<br>
+**Start with a project:** create/open a project, link images, annotations, models and reports, then choose your workspace.
+
+<a id="nine-workspaces"></a>
+
+## 九大功能 / Nine workspaces
+
+點擊圖片可放大檢視。部分截圖來自沿用的既有版本工作區；畫面中的版本號與示例數值不代表 V17 模型效能驗證。<br>
+Click any image to view it at full size. Some screenshots show retained workspaces from earlier versions; their version labels and example numbers are not V17 model-performance validation.
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <p><strong>01 · 影像分類<br>Classification</strong></p>
+      <a href="docs/images/features/classification.png"><img src="docs/images/features/classification.png" alt="影像分類 / Classification" width="300"></a>
+      <p>選擇模型、檢視資料分布與照片，設定訓練及分類檢測。</p>
+      <p>Select models, browse images and class distributions, then configure training and inspection.</p>
+    </td>
+    <td width="33%" valign="top">
+      <p><strong>02 · 物件偵測<br>Object detection</strong></p>
+      <a href="docs/images/features/detection.png"><img src="docs/images/features/detection.png" alt="物件偵測 / Object detection" width="300"></a>
+      <p>定位、分類與計數；提供訓練設定、方框檢測與模型視覺化。</p>
+      <p>Locate, classify and count objects with training controls, box results and model visualization.</p>
+    </td>
+    <td width="33%" valign="top">
+      <p><strong>03 · 異常偵測<br>Anomaly detection</strong></p>
+      <a href="docs/images/features/anomaly.png"><img src="docs/images/features/anomaly.png" alt="異常偵測 / Anomaly detection" width="300"></a>
+      <p>設定異常門檻、覆核缺陷，查看混淆矩陣與評估指標。</p>
+      <p>Configure anomaly thresholds, review defects and inspect confusion matrices and evaluation metrics.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <p><strong>04 · 語意分割<br>Semantic segmentation</strong></p>
+      <a href="docs/images/features/semantic.png"><img src="docs/images/features/semantic.png" alt="語意分割 / Semantic segmentation" width="300"></a>
+      <p>建立像素類別遮罩，配置分割訓練並評估 IoU／Dice。</p>
+      <p>Create pixel-class masks, configure segmentation training and evaluate IoU/Dice.</p>
+    </td>
+    <td width="33%" valign="top">
+      <p><strong>05 · 實例分割<br>Instance segmentation</strong></p>
+      <a href="docs/images/features/instance.png"><img src="docs/images/features/instance.png" alt="實例分割 / Instance segmentation" width="300"></a>
+      <p>分開管理物件遮罩與身分，配置模型並分析 mask AP。</p>
+      <p>Manage individual object masks and identities, configure models and review mask AP.</p>
+    </td>
+    <td width="33%" valign="top">
+      <p><strong>06 · 關鍵點／肢節<br>Keypoints &amp; pose</strong></p>
+      <a href="docs/images/features/keypoints.png"><img src="docs/images/features/keypoints.png" alt="關鍵點／肢節 / Keypoints &amp; pose" width="300"></a>
+      <p>編輯點位、骨架與可見性，使用範本並分析 PCK／定位誤差。</p>
+      <p>Edit landmarks, skeletons and visibility with templates and PCK/localization error analysis.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <p><strong>07 · AI 輔助標記<br>AI-assisted annotation</strong></p>
+      <a href="docs/images/features/ai-assist.png"><img src="docs/images/features/ai-assist.png" alt="AI 輔助標記 / AI-assisted annotation" width="300"></a>
+      <p>以 SAM 點位或框提示產生候選，再由人工接受、修正或拒絕。</p>
+      <p>Generate candidates from SAM point/box prompts, then accept, correct or reject them.</p>
+    </td>
+    <td width="33%" valign="top">
+      <p><strong>08 · 標記品質分析<br>Annotation quality</strong></p>
+      <a href="docs/images/features/annotation-quality.png"><img src="docs/images/features/annotation-quality.png" alt="標記品質分析 / Annotation quality" width="300"></a>
+      <p>檢查待覆核、微小區域與疑似重複標記，匯出品質報告。</p>
+      <p>Review pending images, tiny regions and possible duplicates; export quality reports.</p>
+    </td>
+    <td width="33%" valign="top">
+      <p><strong>09 · 獨立量測<br>Measurement</strong></p>
+      <a href="docs/images/features/measurement.png"><img src="docs/images/features/measurement.png" alt="獨立量測 / Measurement" width="300"></a>
+      <p>量測距離、圓徑、角度與旋轉尺寸，搭配校正、公差及批次報告。</p>
+      <p>Measure distances, diameters, angles and rotated dimensions with calibration, tolerances and batch reports.</p>
+    </td>
+  </tr>
+</table>
+
+模型功能需對應 Toolbox、支援套件及權重；AI 候選需人工覆核。**52 項檢查涵蓋量測與專案／標記回歸，未驗證所有大型模型或 GPU。**<br>
+Model workflows require the relevant toolboxes, support packages and weights. AI candidates require human review. **The 52 checks cover measurement and project/annotation regressions, not all large models or GPU configurations.**
+
+[各功能操作與資料格式 / Workspace workflows and data formats](docs/VISION_WORKFLOWS.md) · [量測手冊 / Measurement guide](docs/USER_GUIDE.md)
+
+---
 
 ## 繁體中文
 
@@ -18,7 +120,7 @@ VIStudio 是以 MATLAB 建立的**視覺檢測工作台**。從起始頁面建�
 
 啟動 `start_VIStudio` 後，首先進入專案首頁。首次使用可按左側「新增專案」，已有專案則按「開啟專案」。
 
-![VIStudio 起始頁面：首次啟動的專案首頁](docs/images/project-home.png)
+[查看起始頁面截圖](#start-page)
 
 | 首頁區域 | 用途 |
 |---|---|
@@ -43,6 +145,8 @@ VIStudio 是以 MATLAB 建立的**視覺檢測工作台**。從起始頁面建�
 | COCO 官方評估／多邊形交換 | 選用：MATLAB 支援的 Python、numpy、pycocotools；量測不需 Python |
 
 只找到 API 不代表已驗證授權取用、實體量測精度或所有模型。此發布包不附 MathWorks Toolbox、預訓練權重、Python 二進位套件及本機私人資料集。
+
+<a id="install"></a>
 
 ### 安裝與啟動
 
@@ -228,7 +332,7 @@ This is **MATLAB source release v17.0.0**, requiring MATLAB and the relevant too
 
 Running `start_VIStudio` opens the project homepage. On first use, choose New project in the sidebar; use Open project to continue existing work.
 
-![VIStudio start page: first-launch project homepage](docs/images/project-home.png)
+[View the start-page screenshot](#start-page)
 
 | Homepage area | Purpose |
 |---|---|
