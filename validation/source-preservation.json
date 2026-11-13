@@ -1,5 +1,10 @@
 {
-  "Checked": 265,
-  "Unchanged": 265,
-  "Changed": []
+  "OriginalMATLABFilesChecked": 179,
+  "HistoricalImplementationsUnchanged": 177,
+  "UpdatedCurrentEntries": [
+    "start_VIStudio.m",
+    "run_validation.m"
+  ],
+  "OriginalEntryBackupsVerified": true,
+  "SourceReadmeSynchronized": true
 }

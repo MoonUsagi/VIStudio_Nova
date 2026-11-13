@@ -1,47 +1,26 @@
-# 驗證範圍 / Validation Scope
+# Validation / 驗證範圍
 
-This source release targets Windows and MATLAB R2026b. Machine-readable final results are included in `../validation/`.
+**104/104 checks passed**, zero failed/incomplete, Windows and MATLAB R2026b `26.2.0.3386108`.
 
-## New measurement checks
+- 84 current regressions: measurement (18), project/frontends (14), shape matching (9), structured annotation (20), paging/routing (2), pose measurement (12) and video extraction (9).
+- 10 stitching checks: native overlap/coordinate recovery including a three-view chain, all four transformation models, mean/feather blending, uniform-image rejection, memory limit, projective horizon, source mutation, RNG restoration, coverage/transform export, invalidation, UI and mixed grayscale/RGB 16-bit sources.
+- 10 synthesis checks: all four types, exact changed-pixel masks, reproducibility/global RNG preservation, strict allowed regions after blur, float-to-16-bit representation, seed wraparound/source grouping, PNG round trips, cancellation, invisible-defect rejection, missing donor/invalid mask, UI and RGB 16-bit donor evidence.
 
-- Native `caliper` edge-pair measurement and physical scaling.
-- Native `fitcircle`, fitted diameter, deterministic RANSAC and restoration of the caller's RNG.
-- Native `fitangle` against synthetic image edges.
-- Manual endpoint distance, angle and point-to-line geometry.
-- Native canvas construction/capture for uicaliper, uifitcircle, uifitangle and uitsquare.
-- Physical anisotropic distances, area and rotated rectangle dimensions; isotropic circle guard.
-- Known-length reference and identity-plane perspective calibration.
-- Inclusive tolerance decisions, unconfigured tolerances and no-edge failure values.
-- Update/delete/Undo/Redo and calibration-induced record clearing.
-- Portable session reload, recomputation of edited stored values and source-image integrity checks.
-- Transactional recipe application and resolution mismatch.
-- Batch continuation across valid, no-edge and wrong-resolution images, including report exports.
-- Visible-viewer image replacement and cleanup of native annotations.
-- V17 homepage measurement routing and English help.
+The 102-check suite passed first. The two new suites were then expanded to 10 checks each and rerun; their previous results were replaced, yielding 104 unique passing results. `run_validation` repeats the final nine suites directly.
 
-## Existing workflow regression
+Additional fresh-path smoke opens all **13** current workspaces and checks **V20** labels, including supported English switching. Three pages use at most six cards and retain every entry.
 
-The packaged project-hub and structured-annotation tests cover project metadata, split guidance, review progress, model/report mismatch, missing references, synchronization, existing vision UI entry points, instance/pose export, candidate review gates, metrics, recovery and integration.
+## Limits
 
-## Clean-package verification
+Tests use original synthetic images/videos. They do not establish production accuracy, physical metrology traceability, defect realism, improved real-model performance, large-image throughput, all codecs/OS versions, every mouse/dialog/cancel path, GPU or all pretrained model paths.
 
-The release is launched from its staged source directory with MATLAB's default toolbox path and the packaged `src`, rather than relying on the original workspace. Package verification checks required assets, documentation links and the file inventory.
+Stitching tests cover controlled overlapping planar views, not severe parallax, reflections, moving scenes or arbitrary unrelated images. Native inlier/error gates are not a general accuracy guarantee. Physical calibration does not automatically transfer to mosaics.
 
-## Not established by this release
+Synthesis masks describe actual synthetic appearance changes, not reviewed physical-defect truth. Real independent testing and source-aware dataset splits remain necessary. No task-specific training adapter or example library is implemented. The library is deferred for future consideration.
 
-- Physical accuracy, measurement uncertainty, gauge R&R or production acceptance.
-- Every mouse placement/drag/file-dialog path or long-running production workloads.
-- Every pretrained model, large-model training/inference or GPU configuration.
-- Other MATLAB releases or operating systems.
-- Automatic alignment or image change detection.
-- A compiled executable, installer or MATLAB Runtime deployment.
+## Evidence
 
-All distributed example images are original synthetic fixtures. API presence is distinct from successful execution; only the listed native measurement paths are included in the new numerical verification.
-
-## Release result
-
-**52/52 packaged checks passed**, with zero failures/incomplete checks. The clean-package smoke launch also passed. **265 pre-existing source/document files remained unchanged.** See `../validation/summary.json` and `../validation/package-smoke.json`.
-
-## Latest-only distribution cleanup
-
-Removed 72 unused historical source files and the archived README. 70 current source/dependency files remain. The clean distribution passed all 52 packaged checks again.
+- [Summary](../validation/summary.json)
+- [Per-test results](../validation/test-results.json)
+- [Workspace smoke](../validation/package-smoke.json)
+- [Source preservation](../validation/source-preservation.json)

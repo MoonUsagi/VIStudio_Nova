@@ -2,7 +2,7 @@
 
 [README](../README.md) · [Measurement guide](USER_GUIDE.md)
 
-V17 adds measurement while retaining the established vision workspaces. These pages intentionally use their stable versioned implementations. Their presence does not mean every model/support-package combination has been executed in this release.
+V20 adds paged workspaces and native shape matching while retaining the established vision workspaces. These pages intentionally use their stable versioned implementations. Their presence does not mean every model/support-package combination has been executed in this release.
 
 ![Workspace entries](images/home-workspaces.png)
 
@@ -69,7 +69,7 @@ COCO exchange supports class mapping preview, independent RLE masks and point vi
 
 ## Advanced workbench / 進階工具
 
-The existing advanced workspace includes model comparison, image-quality checks, reviewed hard-sample queues, geometry/lens calibration, rotated dimensions and product recipes. The new independent measurement studio can load an existing geometry MAT containing `geometry`; its measurement results remain a separate workflow in V17.
+The existing advanced workspace includes model comparison, image-quality checks, reviewed hard-sample queues, geometry/lens calibration, rotated dimensions and product recipes. The independent measurement studio can load an existing geometry MAT containing `geometry`; its measurement results remain a separate workflow in V17.
 
 ## Models and reproducibility / 模型與追溯
 
@@ -80,3 +80,20 @@ Retain dataset roles, source identities, class/template order, preprocessing, ca
 ## Scope / 本版界線
 
 The packaged regressions verify data, annotation/project integration and UI construction. They do not establish the accuracy or runtime compatibility of every large model, GPU configuration or external MAT format. Use the model-free Measurement Demo to check the new independent workflow without pretrained weights.
+
+
+## Shape Matching / 樣板匹配
+
+The independent R2026b Shape Matching workspace is on workspace page two. It supports template load/crop, rotation/scale search, score controls, pose tables, definition save/load and CSV/MAT export. V20 supports template-bound tool alignment and per-object remeasurement. It does not extend the five-stage model-project schema. See [assessment and guide](SHAPE_MATCHING.md).
+
+
+## V20 integrated workflows / 整合流程
+
+[Pose-aware multi-object measurement / 定位後多物件量測](SHAPE_MATCHING.md) · [Video ROI extraction / 影片擷取](VIDEO_EXTRACTION.md) · [Example-library assessment / 範例庫評估](EXAMPLE_LIBRARY_ASSESSMENT.md).
+
+Create measurement tools on the exact cropped template and attach that recipe inside Shape Matching. Video extraction is a separate workspace on page two; it uses a fixed ROI, not tracking. The example library is evaluated only.
+
+
+## V20 navigation / 工作區導航
+
+Model tasks are on page one, annotation/metrology on page two, and video/stitching/synthesis on page three. The example library is deferred. See [feature analysis](FUTURE_FEATURES.md), [stitching](IMAGE_STITCHING.md) and [synthesis](DEFECT_SYNTHESIS.md).

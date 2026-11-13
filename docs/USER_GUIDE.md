@@ -5,9 +5,9 @@
 ## 1. 選擇入口 / Choose an entry
 
 ```matlab
-start_VIStudio                   % V17 project hub
+start_VIStudio                   % V20 project hub
 % Or, after adding src:
-app = VIStudioMeasurementAppV17; % independent measurement
+app = VIStudioMeasurementAppV20; % independent measurement
 ```
 
 Measurement is independent of model training. It can be opened before creating a project. Existing classification/detection/anomaly/segmentation/keypoint workflows retain their versioned backends and project format.
@@ -143,7 +143,7 @@ batchFolder = tempname;
 summary = VIStudioMeasurementV17.batch(recipeFile, files, batchFolder);
 ```
 
-Fixed geometry assumes consistent part pose; automatic registration/change detection is not part of V17. **A snapped point-to-line capture is tied to its captured source hash.** Replay on a different image is rejected; recapture interactively or use an unsnapped fixed point-to-line recipe.
+Fixed geometry assumes consistent part pose; automatic registration/change detection is not part of V20. **A snapped point-to-line capture is tied to its captured source hash.** Replay on a different image is rejected; recapture interactively or use an unsnapped fixed point-to-line recipe.
 
 ## 8. Troubleshooting / 排除問題
 
@@ -157,6 +157,25 @@ Fixed geometry assumes consistent part pose; automatic registration/change detec
 | Batch dimension errors | Use equal-resolution, consistently posed images or prepare another recipe |
 | Unexpected source path resolution | Add `src` only; avoid adding legacy `source/`, backups or tests using genpath |
 | COCO Python bridge unavailable | Configure a supported Python environment with numpy/pycocotools; unrelated to measurement |
-| Workspace says V16 | Existing vision pages retain their versioned backend/UI labels; the V17 launcher and measurement tool are the new release |
+| Workspace says V16 | Existing vision pages retain their versioned backend/UI labels; the V20 launcher and measurement tool are the new release |
 
 For defects, include MATLAB release, toolbox list, exact steps, error text and a minimal shareable fixture. Do not include private datasets or model weights in issue attachments.
+
+
+### 開發原稿與發布版 / Development and release layouts
+
+開發原稿的 `.m` 檔位於根目錄；發布包放在 `src/`。兩者皆使用 `start_VIStudio` 啟動。V20 新增版本化介面，舊版實作與資料格式保持相容；README 與圖片已從發布版同步回開發原稿。
+
+Development `.m` files are in the repository root; the source release uses `src/`. Both launch through `start_VIStudio`. V20 adds current versioned frontends while retaining legacy implementations and compatible data schemas. The release README and images have been synchronized back to the development source.
+
+
+## V20 integrated workflows / 整合流程
+
+[Pose-aware multi-object measurement / 定位後多物件量測](SHAPE_MATCHING.md) · [Video ROI extraction / 影片擷取](VIDEO_EXTRACTION.md) · [Example-library assessment / 範例庫評估](EXAMPLE_LIBRARY_ASSESSMENT.md).
+
+Create measurement tools on the exact cropped template and attach that recipe inside Shape Matching. Video extraction is a separate workspace on page two; it uses a fixed ROI, not tracking. The example library is evaluated only.
+
+
+## V20 navigation / 工作區導航
+
+Model tasks are on page one, annotation/metrology on page two, and video/stitching/synthesis on page three. The example library is deferred. See [feature analysis](FUTURE_FEATURES.md), [stitching](IMAGE_STITCHING.md) and [synthesis](DEFECT_SYNTHESIS.md).

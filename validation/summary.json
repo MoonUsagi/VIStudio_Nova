@@ -1,8 +1,1 @@
-{
-  "Tests": 52,
-  "Passed": 52,
-  "Failed": 0,
-  "Incomplete": 0,
-  "MATLAB": "26.2.0.3386108 (R2026b)",
-  "Scope": "Native measurement and UI/project regression; no large-model training or GPU validation"
-}
+{"Tests":104,"Passed":104,"Failed":0,"Incomplete":0,"MATLAB":"26.2.0.3386108 (R2026b)","Scope":"Native stitching, procedural synthesis and current V20 regression; no real-model/GPU or physical metrology certification"}
