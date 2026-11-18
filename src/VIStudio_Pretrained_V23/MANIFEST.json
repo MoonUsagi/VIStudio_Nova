@@ -1,0 +1,176 @@
+[
+  {
+    "Variant": "fc-siam-diff",
+    "File": "fc-siam-diff-levircd.mat",
+    "SHA256": "d5ce3d5f0e2968fd97af72c9aac8c4c97240f2f22081631d94f6c4deed8fcf3d",
+    "Source": {
+      "Variant": "fc-siam-diff",
+      "Publisher": "likyoo/Open-CD_Model_Zoo",
+      "PublisherRevision": "6b88e874f8dea7430a2ab1ed84b356c6a67128a0",
+      "SourceURL": "https://huggingface.co/likyoo/Open-CD_Model_Zoo/resolve/6b88e874f8dea7430a2ab1ed84b356c6a67128a0/LEVIR-CD/fc_siam_diff_256x256_40k_levircd.pth",
+      "SourceSHA256": "43046d3a24ed770d24c93188414e260a0717be90ab5ac16a38a140762562321e",
+      "SourceBytes": 20773839.0,
+      "ModelCardLicense": "apache-2.0",
+      "ModelCardURL": "https://huggingface.co/likyoo/Open-CD_Model_Zoo",
+      "BackboneSourceSHA256": "dff97fbca2ea95d096947b8495bb6d3dfaef198dd34f3ac4cf96bb8f9b0bdced",
+      "TrainingDataset": "LEVIR-CD",
+      "MeanRGB": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "StdRGB": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "Classes": [
+        "unchanged",
+        "changed"
+      ],
+      "ParityCases": 5,
+      "ReferenceTorch": "2.5.1+cpu",
+      "HeadConversion": "Fold linear 16-channel conv-transpose output and 1x1 two-class segmentation head"
+    },
+    "Cases": [
+      {
+        "InputSize": [
+          64,
+          64,
+          3
+        ],
+        "MaxAbsoluteProbabilityError": 1.1920928955078125e-07,
+        "MeanAbsoluteProbabilityError": 2.746016747323665e-10,
+        "MaskAgreementAtPointFive": 1
+      },
+      {
+        "InputSize": [
+          256,
+          256,
+          3
+        ],
+        "MaxAbsoluteProbabilityError": 1.1920928955078125e-07,
+        "MeanAbsoluteProbabilityError": 1.7657741935295235e-10,
+        "MaskAgreementAtPointFive": 1
+      },
+      {
+        "InputSize": [
+          96,
+          128,
+          3
+        ],
+        "MaxAbsoluteProbabilityError": 1.1920928955078125e-07,
+        "MeanAbsoluteProbabilityError": 1.3805789844667515e-10,
+        "MaskAgreementAtPointFive": 1
+      },
+      {
+        "InputSize": [
+          256,
+          256,
+          3
+        ],
+        "MaxAbsoluteProbabilityError": 1.30385160446167e-08,
+        "MeanAbsoluteProbabilityError": 1.886538451498221e-12,
+        "MaskAgreementAtPointFive": 1
+      },
+      {
+        "InputSize": [
+          65,
+          67,
+          3
+        ],
+        "MaxAbsoluteProbabilityError": 1.1920928955078125e-07,
+        "MeanAbsoluteProbabilityError": 2.8059279899572687e-10,
+        "MaskAgreementAtPointFive": 1
+      }
+    ],
+    "Passed": true
+  },
+  {
+    "Variant": "fc-siam-conc",
+    "File": "fc-siam-conc-levircd.mat",
+    "SHA256": "2323e4e28a3d5844c9258c2f9156401a0c727c255c31b35725f9f0e42b76c7eb",
+    "Source": {
+      "Variant": "fc-siam-conc",
+      "Publisher": "likyoo/Open-CD_Model_Zoo",
+      "PublisherRevision": "6b88e874f8dea7430a2ab1ed84b356c6a67128a0",
+      "SourceURL": "https://huggingface.co/likyoo/Open-CD_Model_Zoo/resolve/6b88e874f8dea7430a2ab1ed84b356c6a67128a0/LEVIR-CD/fc_siam_conc_256x256_40k_levircd.pth",
+      "SourceSHA256": "c27319ed25d17eef2a36e749c10c80352eba29bba1821017dc2133953d7eac86",
+      "SourceBytes": 23126735.0,
+      "ModelCardLicense": "apache-2.0",
+      "ModelCardURL": "https://huggingface.co/likyoo/Open-CD_Model_Zoo",
+      "BackboneSourceSHA256": "dff97fbca2ea95d096947b8495bb6d3dfaef198dd34f3ac4cf96bb8f9b0bdced",
+      "TrainingDataset": "LEVIR-CD",
+      "MeanRGB": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "StdRGB": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "Classes": [
+        "unchanged",
+        "changed"
+      ],
+      "ParityCases": 5,
+      "ReferenceTorch": "2.5.1+cpu",
+      "HeadConversion": "Fold linear 16-channel conv-transpose output and 1x1 two-class segmentation head"
+    },
+    "Cases": [
+      {
+        "InputSize": [
+          64,
+          64,
+          3
+        ],
+        "MaxAbsoluteProbabilityError": 6.854534149169922e-07,
+        "MeanAbsoluteProbabilityError": 6.415967845896375e-08,
+        "MaskAgreementAtPointFive": 1
+      },
+      {
+        "InputSize": [
+          256,
+          256,
+          3
+        ],
+        "MaxAbsoluteProbabilityError": 5.364418029785156e-07,
+        "MeanAbsoluteProbabilityError": 3.191576425365383e-08,
+        "MaskAgreementAtPointFive": 1
+      },
+      {
+        "InputSize": [
+          96,
+          128,
+          3
+        ],
+        "MaxAbsoluteProbabilityError": 4.470348358154297e-07,
+        "MeanAbsoluteProbabilityError": 2.5605705999964812e-08,
+        "MaskAgreementAtPointFive": 1
+      },
+      {
+        "InputSize": [
+          256,
+          256,
+          3
+        ],
+        "MaxAbsoluteProbabilityError": 3.5762786865234375e-07,
+        "MeanAbsoluteProbabilityError": 2.2038577185412578e-08,
+        "MaskAgreementAtPointFive": 1
+      },
+      {
+        "InputSize": [
+          65,
+          67,
+          3
+        ],
+        "MaxAbsoluteProbabilityError": 3.725290298461914e-07,
+        "MeanAbsoluteProbabilityError": 2.6544304532194474e-08,
+        "MaskAgreementAtPointFive": 1
+      }
+    ],
+    "Passed": true
+  }
+]

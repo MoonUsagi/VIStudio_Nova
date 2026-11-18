@@ -1,1 +1,1 @@
-{"Tests":104,"Passed":104,"Failed":0,"Incomplete":0,"MATLAB":"26.2.0.3386108 (R2026b)","Scope":"Native stitching, procedural synthesis and current V20 regression; no real-model/GPU or physical metrology certification"}
+{"Tests":162,"Passed":162,"Failed":0,"Incomplete":0,"MATLAB":"26.2.0.3386108 (R2026b)","Scope":"V25 native Open-CD Siamese SegFormer MiT-B0 variant, BIT and FC-Siam pretrained parity plus regressions; not original ChangeFormer V6; no industrial accuracy/GPU/training certification"}

@@ -2,9 +2,9 @@
 
 [README](../README.md) · [Future features](FUTURE_FEATURES.md)
 
-工作區第三頁開啟 Image Stitching，或執行 `VIStudioStitchAppV20`。需要 Image Processing Toolbox 與 Computer Vision Toolbox；不需模型權重。
+工作區第三頁開啟 Image Stitching，或執行 `VIStudioStitchAppV25`。需要 Image Processing Toolbox 與 Computer Vision Toolbox；不需模型權重。
 
-Open Image Stitching on page three or run `VIStudioStitchAppV20`. Requires Image Processing Toolbox and Computer Vision Toolbox, without model weights.
+Open Image Stitching on page three or run `VIStudioStitchAppV25`. Requires Image Processing Toolbox and Computer Vision Toolbox, without model weights.
 
 ## 操作 / Workflow
 

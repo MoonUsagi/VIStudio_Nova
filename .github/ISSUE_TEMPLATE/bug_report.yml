@@ -1,0 +1,20 @@
+name: Bug report / 問題回報
+description: Report reproducible behavior in VIStudio
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: MATLAB / Toolboxes / OS
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, expected result and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error and minimal shareable example
+      description: Please use synthetic or non-private images and exclude model weights or credentials.

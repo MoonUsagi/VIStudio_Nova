@@ -2,9 +2,9 @@
 
 [README](../README.md) · [Future features](FUTURE_FEATURES.md)
 
-工作區第三頁開啟 Defect Synthesis，或執行 `VIStudioDefectSynthesisAppV20`。這是**可重現的程序式影像合成**，不呼叫生成式 AI、外部服務或模型權重，需要 Image Processing Toolbox。
+工作區第三頁開啟 Defect Synthesis，或執行 `VIStudioDefectSynthesisAppV25`。這是**可重現的程序式影像合成**，不呼叫生成式 AI、外部服務或模型權重，需要 Image Processing Toolbox。
 
-Open Defect Synthesis on page three or run `VIStudioDefectSynthesisAppV20`. This is **reproducible procedural synthesis**, without generative AI, external services or model weights. Requires Image Processing Toolbox.
+Open Defect Synthesis on page three or run `VIStudioDefectSynthesisAppV25`. This is **reproducible procedural synthesis**, without generative AI, external services or model weights. Requires Image Processing Toolbox.
 
 ## 操作 / Workflow
 

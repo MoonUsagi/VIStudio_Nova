@@ -27,3 +27,15 @@ Thumbs.db
 # Distribution outputs
 *.zip
 releases/
+
+# Explicitly licensed pretrained MATLAB checkpoints and original parity fixtures
+!src/VIStudio_Pretrained_V23/*.mat
+!tests/fixtures/fc_siam_reference_v23.mat
+
+# Publisher-licensed native BIT model and original parity fixture
+!src/VIStudio_BIT_Pretrained_V24/*.mat
+!tests/fixtures/bit_reference_v24.mat
+
+# Licensed Open-CD ChangeFormer-variant checkpoint and original parity fixture
+!src/VIStudio_ChangeFormer_Pretrained_V25/*.mat
+!tests/fixtures/changeformer_reference_v25.mat

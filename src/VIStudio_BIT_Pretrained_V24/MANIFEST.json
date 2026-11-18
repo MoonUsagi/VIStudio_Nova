@@ -1,0 +1,85 @@
+{
+  "Variant": "bit-r18",
+  "File": "bit-r18-levircd.mat",
+  "SHA256": "3818e7db6b36de621f3783dcb906a93d7406ad2159c88feed191e01d23dbffdd",
+  "Source": {
+    "Architecture": "bit-r18",
+    "Publisher": "likyoo/Open-CD_Model_Zoo",
+    "PublisherRevision": "6b88e874f8dea7430a2ab1ed84b356c6a67128a0",
+    "ModelCardLicense": "apache-2.0",
+    "ModelCardURL": "https://huggingface.co/likyoo/Open-CD_Model_Zoo",
+    "SourceURL": "https://huggingface.co/likyoo/Open-CD_Model_Zoo/resolve/6b88e874f8dea7430a2ab1ed84b356c6a67128a0/LEVIR-CD/bit_r18_256x256_40k_levircd.pth",
+    "SourceSHA256": "a6e8e3b7c09a4692c0690ed11fe9148bdde658f233f356078ce3efe15e3ffc55",
+    "TrainingDataset": "LEVIR-CD",
+    "ImplementationVariant": "Open-CD improved BITHead + ResNetV1c-18 three stages",
+    "OriginalBITAuthorCheckpoint": false,
+    "ReferenceTorch": "2.5.1+cpu",
+    "ReferenceCases": 5,
+    "BITHeadSourceSHA256": "26e683535b4d33f4bcc687e9b53348888deadfc2d5757b5384e29492cda8456f"
+  },
+  "MATLAB": "26.2.0.3386108 (R2026b)",
+  "Cases": [
+    {
+      "InputSize": [
+        64,
+        64,
+        3
+      ],
+      "MaxProbabilityError": 2.980232238769531e-07,
+      "MeanProbabilityError": 1.3124804354447406e-08,
+      "MaskAgreement": 1,
+      "BackboneMaxError": 1.430511474609375e-06
+    },
+    {
+      "InputSize": [
+        96,
+        128,
+        3
+      ],
+      "MaxProbabilityError": 2.5033950805664062e-06,
+      "MeanProbabilityError": 1.5248311058257968e-07,
+      "MaskAgreement": 1,
+      "BackboneMaxError": 1.6689300537109375e-06
+    },
+    {
+      "InputSize": [
+        65,
+        67,
+        3
+      ],
+      "MaxProbabilityError": 1.1920928955078125e-07,
+      "MeanProbabilityError": 8.807556461931654e-09,
+      "MaskAgreement": 1,
+      "BackboneMaxError": 1.7881393432617188e-06
+    },
+    {
+      "InputSize": [
+        256,
+        256,
+        3
+      ],
+      "MaxProbabilityError": 5.632638931274414e-06,
+      "MeanProbabilityError": 3.013767866377748e-07,
+      "MaskAgreement": 1,
+      "BackboneMaxError": 1.9073486328125e-06
+    },
+    {
+      "InputSize": [
+        64,
+        64,
+        3
+      ],
+      "MaxProbabilityError": 1.1920928955078125e-07,
+      "MeanProbabilityError": 2.0131007971713188e-10,
+      "MaskAgreement": 1,
+      "BackboneMaxError": 1.1920928955078125e-06
+    }
+  ],
+  "Tolerance": 0.0001,
+  "Passed": true,
+  "NativeMATLAB": true,
+  "PythonInferenceRequired": false,
+  "IndustrialAccuracyValidated": false,
+  "GPUValidated": false,
+  "TrainingImplemented": false
+}

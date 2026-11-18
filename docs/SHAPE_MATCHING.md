@@ -2,9 +2,9 @@
 
 [README](../README.md) · [Measurement](USER_GUIDE.md) · [Video ROI](VIDEO_EXTRACTION.md)
 
-V20 在獨立樣板匹配工作區加入 Measurement 配方。每個匹配物件各自轉換工具座標，並在搜尋影像重新找邊或計算幾何，不複製樣板上的既有量測值。
+V25 在獨立樣板匹配工作區加入 Measurement 配方。每個匹配物件各自轉換工具座標，並在搜尋影像重新找邊或計算幾何，不複製樣板上的既有量測值。
 
-V20 integrates Measurement recipes inside Shape Matching. Every match transforms its tool geometry and remeasures the search image, rather than copying a reference value.
+V25 integrates Measurement recipes inside Shape Matching. Every match transforms its tool geometry and remeasures the search image, rather than copying a reference value.
 
 ## 操作 / Workflow
 
@@ -95,6 +95,6 @@ The local build exposes UsePolarity while public documentation lists EdgePolarit
 - [matchshape](https://www.mathworks.com/help/visual-inspection/ref/shapemodel.matchshape.html)
 
 
-## V20 navigation / 工作區導航
+## V25 navigation / 工作區導航
 
 Model tasks are on page one, annotation/metrology on page two, and video/stitching/synthesis on page three. The example library is deferred. See [feature analysis](FUTURE_FEATURES.md), [stitching](IMAGE_STITCHING.md) and [synthesis](DEFECT_SYNTHESIS.md).

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="350" viewBox="0 0 1100 350" role="img" aria-label="Native MATLAB FC-Siam shared encoder and four-level decoder">
+<rect width="1100" height="350" rx="16" fill="#0e182b"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#f2f5fa"><text x="550" y="40" font-size="24" font-weight="bold">FC-Siam · Native MATLAB Architecture</text>
+<g fill="#103f50" stroke="#42d6ca" stroke-width="2"><rect x="30" y="90" width="160" height="65" rx="8"/><rect x="30" y="200" width="160" height="65" rx="8"/><rect x="250" y="115" width="230" height="120" rx="8"/><rect x="540" y="115" width="190" height="120" rx="8"/><rect x="790" y="115" width="180" height="120" rx="8"/></g>
+<text x="110" y="118" font-size="18">Reference RGB</text><text x="110" y="142" font-size="15">H × W × 3</text><text x="110" y="230" font-size="18">Current RGB</text><text x="110" y="253" font-size="15">H × W × 3</text>
+<text x="365" y="148" font-size="19">Shared Encoder</text><text x="365" y="178" font-size="17">16 → 32 → 64 → 128</text><text x="365" y="207" font-size="15">4 pools · BN · spatial dropout</text>
+<text x="635" y="148" font-size="19">Multi-scale skips</text><text x="635" y="179" font-size="17">abs difference</text><text x="635" y="206" font-size="17">or concatenation</text>
+<text x="880" y="148" font-size="19">4-level Decoder</text><text x="880" y="179" font-size="16">Learned up-convolutions</text><text x="880" y="207" font-size="16">2-class softmax</text>
+<g stroke="#42d6ca" stroke-width="3" fill="none"><path d="M190 123H218V155H244M190 233H218V195H244M480 175H534M730 175H784M970 175H1040"/></g><text x="1025" y="151" font-size="15">Change</text><text x="1025" y="201" font-size="15">map</text>
+<text x="550" y="303" font-size="17" fill="#ffbd66">Random initialization ≠ trained inspection capability · No Python inference dependency</text></g></svg>

@@ -1,0 +1,111 @@
+{
+  "Variant": "opencd-changeformer-b0",
+  "File": "opencd-changeformer-b0-levircd.mat",
+  "SHA256": "0abb3e08a6595d692462f275f981b153f4add19ddcc639f0f82538614f648495",
+  "Source": {
+    "Architecture": "opencd-changeformer-b0",
+    "Publisher": "likyoo/Open-CD_Model_Zoo",
+    "PublisherRevision": "6b88e874f8dea7430a2ab1ed84b356c6a67128a0",
+    "ModelCardLicense": "apache-2.0",
+    "ModelCardURL": "https://huggingface.co/likyoo/Open-CD_Model_Zoo",
+    "SourceURL": "https://huggingface.co/likyoo/Open-CD_Model_Zoo/resolve/6b88e874f8dea7430a2ab1ed84b356c6a67128a0/LEVIR-CD/changeformer_mit-b0_256x256_40k_levircd.pth",
+    "SourceSHA256": "34389eb184f2bc5ae14652c054c7512801c04fcaa91f67dfe5dbfd4c2193fff7",
+    "TrainingDataset": "LEVIR-CD",
+    "ImplementationVariant": "Open-CD Siamese SegFormer MiT-B0, published as ChangeFormer; not strict original ChangeFormer reproduction",
+    "OriginalChangeFormerV6": false,
+    "ReferenceTorch": "2.5.1+cpu",
+    "ReferenceProtocol": "independent functional PyTorch forward from published state/config; not full OpenMMLab installation",
+    "ReferenceCases": 5
+  },
+  "MATLAB": "26.2.0.3386108 (R2026b)",
+  "Cases": [
+    {
+      "InputSize": [
+        64,
+        64,
+        3
+      ],
+      "MaxProbabilityError": 1.7583370208740234e-06,
+      "MeanProbabilityError": 1.5453385060482105e-07,
+      "MaskAgreement": 1,
+      "StageErrors": [
+        1.3113021850585938e-06,
+        8.344650268554688e-07,
+        1.0728836059570312e-06,
+        4.76837158203125e-06
+      ]
+    },
+    {
+      "InputSize": [
+        96,
+        128,
+        3
+      ],
+      "MaxProbabilityError": 9.238719940185547e-07,
+      "MeanProbabilityError": 2.9742182050540578e-08,
+      "MaskAgreement": 1,
+      "StageErrors": [
+        1.6689300537109375e-06,
+        1.5720725059509277e-06,
+        1.3113021850585938e-06,
+        4.291534423828125e-06
+      ]
+    },
+    {
+      "InputSize": [
+        65,
+        67,
+        3
+      ],
+      "MaxProbabilityError": 1.3113021850585938e-06,
+      "MeanProbabilityError": 6.605252877989187e-08,
+      "MaskAgreement": 1,
+      "StageErrors": [
+        1.9073486328125e-06,
+        1.7881393432617188e-06,
+        1.5497207641601562e-06,
+        1.049041748046875e-05
+      ]
+    },
+    {
+      "InputSize": [
+        256,
+        256,
+        3
+      ],
+      "MaxProbabilityError": 3.3974647521972656e-06,
+      "MeanProbabilityError": 9.116774180029097e-08,
+      "MaskAgreement": 1,
+      "StageErrors": [
+        1.9073486328125e-06,
+        1.1324882507324219e-06,
+        6.258487701416016e-07,
+        6.198883056640625e-06
+      ]
+    },
+    {
+      "InputSize": [
+        64,
+        64,
+        3
+      ],
+      "MaxProbabilityError": 8.731149137020111e-10,
+      "MeanProbabilityError": 5.989322319349677e-12,
+      "MaskAgreement": 1,
+      "StageErrors": [
+        1.6689300537109375e-06,
+        9.5367431640625e-07,
+        1.0728836059570312e-06,
+        5.7220458984375e-06
+      ]
+    }
+  ],
+  "Tolerance": 0.0001,
+  "Passed": true,
+  "NativeMATLAB": true,
+  "PythonInferenceRequired": false,
+  "OriginalChangeFormerV6": false,
+  "IndustrialAccuracyValidated": false,
+  "GPUValidated": false,
+  "TrainingImplemented": false
+}

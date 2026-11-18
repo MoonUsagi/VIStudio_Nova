@@ -1,5 +1,47 @@
 # Changelog
 
+## 25.0.0 — 2026-11-13
+
+- Added independent native MATLAB inference for the Open-CD model published as ChangeFormer MiT-B0, with explicit disclosure that it is a Siamese SegFormer variant, not original ChangeFormer V6.
+- Bundled publisher-declared Apache-2.0 LEVIR-CD MAT weights and attribution/license/provenance hashes. Verified all four encoder stages and probabilities on five original synthetic pairs with matching threshold-0.5 masks.
+- Integrated random-model creation, Pretrained and strict native MAT loading, preserving image coordinates and source variant metadata.
+- Added bilingual guidance distinguishing BIT reference-pair inspection from learning normality and ground-truth accuracy assessment.
+- Updated current V25 workspaces, bilingual docs and source release. Training/GPU/industrial accuracy remain unestablished; example library remains deferred.
+
+
+## 24.0.0 — 2026-11-13
+
+- Added independent native MATLAB inference for the Open-CD improved BIT-R18 variant: shared ResNetV1c-18, semantic tokens, one encoder and eight cross-attention decoder blocks.
+- Bundled publisher-declared Apache-2.0 LEVIR-CD native MAT weights, pinned provenance, hashes and attribution/license notice. No original BIT-author code/checkpoint or Python runtime dependency.
+- Verified backbone/probability parity on five original synthetic pairs, including odd-size padding, with matching threshold-0.5 masks.
+- Integrated random-model creation, Pretrained and native MAT loading into Change Detection, with strict tensor contracts and pixel-preserving input geometry.
+- Updated all current V24 workspaces, bilingual docs and release evidence. BIT training and industrial accuracy are not established; example library remains deferred.
+
+
+## 23.0.0 — 2026-11-13
+
+- Bundled converted native MATLAB FC-Siam-diff/conc pretrained checkpoints from the publisher's Apache-2.0 Open-CD Model Zoo, with pinned source/hash/license/modification notices.
+- Verified both-class probability parity against the original published weights on five original synthetic pairs per variant, including normalized zero padding and odd dimensions. No retraining occurred.
+- Added Pretrained in Change Detection, native normalization/padding/cropping, explicit input-geometry adaptation and a 0.5 threshold default for the pretrained button. Runtime inference requires no Python.
+- Updated bilingual README, model research, screenshots, tests and source release. Industrial defect accuracy and GPU remain unvalidated; example library remains deferred.
+
+
+## 22.0.0 — 2026-11-13
+
+- Added independently implemented full native MATLAB FC-Siam-diff and FC-Siam-conc: shared four-level encoder, multi-scale skips, complete transposed-convolution decoder, channel-wise dropout and two-class probabilities.
+- Added strict native MAT weight/state checkpoints, odd-size alignment, inference and a native SGD training-step API.
+- Integrated model creation/loading and variant selection into Change Detection; random weights are explicitly labeled and model failures do not fall back to baseline detection.
+- Updated all current V22 frontends, bilingual docs and release evidence. No Python inference dependency or third-party pretrained weights; example library remains deferred.
+
+
+## 21.0.0 — 2026-11-13
+
+- Added bilingual Change Detection on workspace page three: registration gates, ROI, absolute difference/SSIM, thresholding, regions, IoU/Dice and PNG/CSV/MAT exports.
+- Added original tiny Early Fusion and shared Siamese CPU research networks with a strict MAT artifact contract; external pretrained models are not bundled.
+- Updated all 14 workspace entry versions, bilingual README, screenshots and model-feasibility documentation.
+- Example library remains deferred; historical source implementations are preserved.
+
+
 ## 20.0.0 — 2026-11-12
 
 - Added feature-based Image Stitching with registration quality gates, feather/mean blending, valid coverage and coordinate evidence.

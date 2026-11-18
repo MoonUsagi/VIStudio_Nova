@@ -1,3 +1,3 @@
 function fig=VIStudio(varargin)
-fig=VIStudioV20(varargin{:});
+fig=VIStudioV25(varargin{:});
 end

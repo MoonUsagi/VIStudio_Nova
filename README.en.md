@@ -8,19 +8,19 @@
 </p>
 <p align="center">
   <img src="docs/images/badges/matlab.svg" alt="Tested with MATLAB R2026b">
-  <img src="docs/images/badges/version.svg" alt="Version 20.0.0">
-  <a href="docs/VALIDATION.md"><img src="docs/images/badges/checks.svg" alt="104 of 104 packaged checks passed"></a>
+  <img src="docs/images/badges/version.svg" alt="Version 25.0.0">
+  <a href="docs/VALIDATION.md"><img src="docs/images/badges/checks.svg" alt="162 of 162 packaged checks passed"></a>
   <img src="docs/images/badges/source.svg" alt="MATLAB source distribution">
 </p>
 <p align="center"><a href="README.md#繁體中文">繁體中文</a> · <a href="#guide">English guide</a></p>
 
 ---
 
-Build a project from the start page, then follow **Data → Label → Train → Evaluate → Inspect** across thirteen workspaces.
+Build a project from the start page, then follow **Data → Label → Train → Evaluate → Inspect** across fourteen workspaces.
 
-從起始頁建立專案，依 **資料 → 標記 → 訓練 → 評估 → 檢測** 串接十三大工作區。
+從起始頁建立專案，依 **資料 → 標記 → 訓練 → 評估 → 檢測** 串接十四大工作區。
 
-**Contents · 目錄：** [Start page 起始頁](#start-page) · [Thirteen workspaces 十三大工作區](#workspaces) · [Install & launch 安裝啟動](#install) · [Workflows 操作流程](docs/VISION_WORKFLOWS.md) · [Validation 驗證](docs/VALIDATION.md) · [Release notes 更新紀錄](CHANGELOG.md)
+**Contents · 目錄：** [Start page 起始頁](#start-page) · [Fourteen workspaces 十四大工作區](#workspaces) · [Install & launch 安裝啟動](#install) · [Workflows 操作流程](docs/VISION_WORKFLOWS.md) · [Validation 驗證](docs/VALIDATION.md) · [Release notes 更新紀錄](CHANGELOG.md)
 
 <a id="start-page"></a>
 
@@ -33,10 +33,10 @@ Build a project from the start page, then follow **Data → Label → Train → 
 
 <a id="workspaces"></a>
 
-## 十三大工作區 / Thirteen workspaces
+## 十四大工作區 / Fourteen workspaces
 
-點擊圖片可放大檢視。部分截圖來自沿用的既有版本工作區；畫面中的版本號與示例數值不代表 V20 模型效能驗證。<br>
-Click any image to view it at full size. Some screenshots show retained workspaces from earlier versions; their version labels and example numbers are not V20 model-performance validation.
+點擊圖片可放大檢視。部分截圖來自沿用的既有版本工作區；畫面中的版本號與示例數值不代表 V25 模型效能驗證。<br>
+Click any image to view it at full size. Some screenshots show retained workspaces from earlier versions; their version labels and example numbers are not V25 model-performance validation.
 
 <table>
 <tr>
@@ -119,12 +119,13 @@ Click any image to view it at full size. Some screenshots show retained workspac
 <td width="50%" valign="top"><p><strong>12 · 影像拼接 / Image stitching</strong></p><a href="docs/images/features/stitch.png"><img src="docs/images/features/stitch.png" alt="Image stitching" width="440"></a><p>對重疊影像做配準、品質檢查及融合，保留有效區與座標變換。</p><p>Register and blend overlapping views with quality gates, valid coverage and coordinate transforms.</p></td>
 <td width="50%" valign="top"><p><strong>13 · 影像缺陷合成 / Defect synthesis</strong></p><a href="docs/images/features/synthesis.png"><img src="docs/images/features/synthesis.png" alt="Defect synthesis" width="440"></a><p>產生刮痕、斑點、污漬與貼片，匯出實際變更遮罩及可重現設定。</p><p>Generate procedural defects with exact changed-pixel masks and reproducible settings.</p></td>
 </tr>
+<tr><td width="50%" valign="top"><p><strong>14 · 影像變化偵測 / Change Detection</strong></p><a href="docs/images/features/change.png"><img src="docs/images/features/change.png" alt="Change Detection" width="440"></a><p>比較參考與待測影像，對齊、限定 ROI，檢視變化遮罩及 IoU／Dice，匯出各變化區域。</p><p>Align image pairs, inspect ROI change maps, evaluate IoU/Dice and export region evidence.</p></td></tr>
 </table>
 
 [樣板匹配評估與操作 / Shape matching assessment and guide](docs/SHAPE_MATCHING.md)
 
-模型功能需對應 Toolbox、支援套件及權重；AI 候選需人工覆核。**104 項檢查涵蓋定位量測、影片擷取、形狀匹配與專案／標記回歸，未驗證所有大型模型或 GPU。**<br>
-Model workflows require the relevant toolboxes, support packages and weights. AI candidates require human review. **The 104 checks cover pose-aware measurements, video extraction, native shape matching and measurement and project/annotation regressions, not all large models or GPU configurations.**
+模型功能需對應 Toolbox、支援套件及權重；AI 候選需人工覆核。**162 項檢查涵蓋定位量測、影片擷取、形狀匹配與專案／標記回歸，未驗證所有大型模型或 GPU。**<br>
+Model workflows require the relevant toolboxes, support packages and weights. AI candidates require human review. **The 162 checks cover pose-aware measurements, video extraction, native shape matching and measurement and project/annotation regressions, not all large models or GPU configurations.**
 
 [各功能操作與資料格式 / Workspace workflows and data formats](docs/VISION_WORKFLOWS.md) · [量測手冊 / Measurement guide](docs/USER_GUIDE.md) · [影片擷取 / Video ROI](docs/VIDEO_EXTRACTION.md) · [範例庫評估 / Example-library assessment](docs/EXAMPLE_LIBRARY_ASSESSMENT.md)
 
@@ -136,9 +137,9 @@ Model workflows require the relevant toolboxes, support packages and weights. AI
 
 VIStudio is a MATLAB **visual inspection workspace**. Start on the homepage to create or open a project, organize images, annotations, models and reports, and enter the workspace for your task.
 
-The main workflow is **Data → Label → Train → Evaluate → Inspect**. The application brings together classification, object and anomaly detection, semantic/instance segmentation, keypoints, AI-assisted annotation and annotation quality analysis. V20 adds image stitching and procedural defect synthesis alongside pose-aware measurement and video ROI extraction, with paged workspaces and consistently versioned V20 frontends.
+The main workflow is **Data → Label → Train → Evaluate → Inspect**. The application brings together classification, object and anomaly detection, semantic/instance segmentation, keypoints, AI-assisted annotation and annotation quality analysis. V25 adds native Open-CD ChangeFormer MiT-B0 variant weights alongside BIT and FC-Siam alongside stitching, synthesis, pose-aware measurement and video ROI extraction, with paged workspaces and consistently versioned V25 frontends.
 
-This is **MATLAB source release v20.0.0**, requiring MATLAB and the relevant toolboxes. Image change detection is planned for a later release.
+This is **MATLAB source release v25.0.0**, requiring MATLAB and the relevant toolboxes. V25 includes the Change Detection workspace.
 
 ## Start page and project hub
 
@@ -169,7 +170,7 @@ Validated on **Windows with MATLAB R2026b**.
 - Deep learning workflows: Deep Learning Toolbox and task-specific support packages/weights. GPU is optional.
 - Optional official COCO evaluation/polygon conversion: a supported Python environment with numpy and pycocotools. Measurement requires no Python.
 
-Toolbox code, pretrained weights, Python binaries, private datasets, and MATLAB Compiler outputs are not bundled. API presence alone does not prove license availability or validated model performance.
+Four licensed Open-CD FC-Siam/BIT/ChangeFormer-variant native MAT checkpoints are bundled with attribution and provenance. Toolbox code, Python binaries, private datasets and MATLAB Compiler outputs are not bundled. API presence alone does not prove license availability or validated model performance.
 
 <a id="install"></a>
 
@@ -185,10 +186,10 @@ For measurement only:
 
 ```matlab
 if isfolder(fullfile(pwd, 'src')), addpath(fullfile(pwd, 'src')); end
-app = VIStudioMeasurementAppV20;
+app = VIStudioMeasurementAppV25;
 ```
 
-Add `src` only, rather than using `genpath` across the repository. Unused historical launchers and implementations have been removed. Remaining versioned files in `src` are required V20 components, not separate old releases.
+Add `src` only, rather than using `genpath` across the repository. Unused historical launchers and implementations have been removed. Remaining versioned files in `src` are required V25 components, not separate old releases.
 
 ## Create your first project and follow the workflow
 
@@ -239,7 +240,7 @@ Detailed documentation: [Vision workflows](docs/VISION_WORKFLOWS.md) · [Measure
 
 ## Independent measurement workspace
 
-Measurement is one of VIStudio's workspaces. Open Workspaces → Measurement, or run `VIStudioMeasurementAppV20` directly.
+Measurement is one of VIStudio's workspaces. Open Workspaces → Measurement, or run `VIStudioMeasurementAppV25` directly.
 
 ![Independent measurement workspace](docs/images/measurement-workspace.png)
 
@@ -329,7 +330,7 @@ Synthetic fixtures do not replace calibrated physical artifacts or repeatability
 ## Repository layout
 
 ```text
-start_VIStudio.m           Launch V20
+start_VIStudio.m           Launch V25
 run_validation.m           Run packaged tests
 src/                       Apps, versioned backends and local assets
 examples/                  Model-free synthetic example
@@ -340,7 +341,7 @@ RELEASE_MANIFEST.json       File inventory
 SHA256SUMS                  File hashes
 ```
 
-The release excludes local datasets, weights, sessions, `.git` history, backups and execution logs. `.gitignore` covers common generated artifacts. Do not add your own private data or model files when uploading the repository.
+The release includes only the four documented public pretrained models and excludes private datasets, private weights, sessions, `.git` history, backups and execution logs. `.gitignore` covers common generated artifacts. Do not add your own private data or model files when uploading the repository.
 
 For issues, include MATLAB/toolbox versions, steps to reproduce, errors and a shareable minimal example. See [CONTRIBUTING](CONTRIBUTING.md).
 
@@ -354,12 +355,12 @@ The original README credits the initial build to **Fred Liu and Tim Yeh**. This 
 
 ### 開發原稿與發布版 / Development and release layouts
 
-開發原稿的 `.m` 檔位於根目錄；發布包放在 `src/`。兩者皆使用 `start_VIStudio` 啟動。V20 新增版本化介面，舊版實作與資料格式保持相容；README 與圖片已從發布版同步回開發原稿。
+開發原稿的 `.m` 檔位於根目錄；發布包放在 `src/`。兩者皆使用 `start_VIStudio` 啟動。V25 新增版本化介面，舊版實作與資料格式保持相容；README 與圖片已從發布版同步回開發原稿。
 
-Development `.m` files are in the repository root; the source release uses `src/`. Both launch through `start_VIStudio`. V20 adds current versioned frontends while retaining legacy implementations and compatible data schemas. The release README and images have been synchronized back to the development source.
+Development `.m` files are in the repository root; the source release uses `src/`. Both launch through `start_VIStudio`. V25 adds current versioned frontends while retaining legacy implementations and compatible data schemas. The release README and images have been synchronized back to the development source.
 
 
-### V20 新功能 / New workflows
+### V25 新功能 / New workflows
 
 **定位後逐物件量測：**在樣板匹配開啟「設定量測工具」，於完全相同的裁切樣板記錄工具，再按「套用編輯器」。匹配後自動搬移工具並重新量測，匯出物件摘要、各工具結果與逐物件資料夾。[操作與支援範圍](docs/SHAPE_MATCHING.md)。
 
@@ -382,6 +383,107 @@ Page three groups video extraction, stitching and synthesis; page two contains a
 
 [影像拼接操作 / Stitching guide](docs/IMAGE_STITCHING.md) · [缺陷合成操作 / Synthesis guide](docs/DEFECT_SYNTHESIS.md) · [功能擴充分析與未來考量 / Feature roadmap](docs/FUTURE_FEATURES.md)
 
-**範例庫維持暫緩。** 後續優先候選為合成資料覆核與訓練格式串接、來源群組切分、變化偵測與拼接品質檢視；未排定交付日期。
+**範例庫維持暫緩。** 後續優先候選為合成資料覆核與訓練格式串接、來源群組切分、變化模型的實際資料驗證與拼接品質檢視；未排定交付日期。
 
-**The example library remains deferred.** Future candidates include reviewed synthetic-data adapters, grouped splits, change detection and stitch-quality inspection, without committed delivery dates.
+**The example library remains deferred.** Future candidates include reviewed synthetic-data adapters, grouped splits, real-data validation of change models and stitch-quality inspection, without committed delivery dates.
+
+
+### V25 · 影像變化偵測 / Change Detection
+
+從工作區第三頁開啟「影像變化偵測」：載入參考與待測影像 → 選擇對齊方式及 ROI → 使用像素差分或 SSIM → 調整門檻與最小區域 → 覆核遮罩 → 匯出 PNG、CSV 與 MAT。真值遮罩需在參考影像座標；無有效重疊或配準不可靠時拒絕執行。
+
+Open **Change Detection on workspace page three**. Load reference/current images, choose registration and ROI, select absolute difference or SSIM, adjust threshold/minimum area, review and export PNG/CSV/MAT evidence. Ground truth uses reference coordinates. Invalid overlap or unreliable registration is rejected.
+
+可載入本版指定格式的研究模型 MAT。自製小型 **Early Fusion** 與 **Shared Siamese abs-difference** 已做 CPU 推論及合成資料訓練可行性測試；這兩個 tiny 原型不是預訓練檢測器；完整 FC-Siam 已在 V25 另外實作，BIT 已於 V25 整合；Open-CD ChangeFormer MiT-B0 變體已於 V25 整合，原作者 V6 未整合。任意外部 MAT 不會自動轉換成可用模型。
+
+The native research artifact loader supports the documented paired-input contract. Original tiny **Early Fusion** and **shared Siamese abs-difference** prototypes have CPU inference/synthetic-training checks. They are not pretrained inspection models or full paper reproductions. Arbitrary external MAT files are not automatically converted.
+
+Dependencies: Image Processing Toolbox; Computer Vision Toolbox for registration; Deep Learning Toolbox only for research networks. No Python dependency for the baseline workspace.
+
+[操作說明 / User guide](docs/CHANGE_DETECTION.md) · [模型研究與實測範圍 / Model feasibility research](docs/CHANGE_MODELS_RESEARCH.md)
+
+**範例庫維持暫緩 / The example library remains deferred.**
+
+
+### V25 · MATLAB 原生 FC-Siam / Native FC-Siam
+
+變化偵測的模型下拉選單新增 **FC-Siam-diff** 與 **FC-Siam-conc**。完整四層共享編碼器與多尺度解碼器在 MATLAB 原生建立；支援原生 MAT 權重、雙影像推論、奇數尺寸對齊及單步訓練 API，無 Python 推論依賴。
+
+The Change Detection selector now includes **FC-Siam-diff** and **FC-Siam-conc**. Full four-level shared-encoder/multi-scale-decoder models are created natively in MATLAB, with native MAT checkpoints, paired inference, odd-size alignment and a training-step API. Python inference is not required.
+
+![Native FC-Siam architecture](docs/images/features/fc-siam-architecture.svg)
+
+先載入參考影像，再選 FC-Siam 並按 **New model** 測試架構；或按 **Load MAT** 載入已保存的原生權重。新建模型是 **RANDOM_INITIALIZATION**，未完成訓練。本版已附轉換並驗證數值一致性的 Open-CD 預訓練 MAT；任意 `.pth` 不會自動匯入，實際工業檢出率與 GPU 尚未驗證。BIT 已於 V25 整合；Open-CD ChangeFormer MiT-B0 變體已於 V25 整合，原作者 V6 未整合。
+
+Load the reference first, select FC-Siam and choose **New model** for architecture testing, or **Load MAT** for a saved native checkpoint. New models are **RANDOM_INITIALIZATION**, not trained detectors. Converted Open-CD pretrained MAT weights are bundled and probability parity is checked. Arbitrary `.pth` import, real industrial accuracy and GPU execution remain unverified. BIT is integrated in V25; the Open-CD ChangeFormer MiT-B0 variant is integrated; original V6 is not integrated.
+
+[原生架構與權重操作 / Native architecture and weight guide](docs/FC_SIAM_NATIVE.md) · [模型研究 / Model research](docs/CHANGE_MODELS_RESEARCH.md)
+
+範例庫維持暫緩 / The example library remains deferred.
+
+
+### V25 · 不需重新訓練的 FC-Siam / Ready-to-load pretrained FC-Siam
+
+工作區第三頁 → 影像變化偵測 → 載入參考／待測影像 → 選 FC-Siam-diff 或 FC-Siam-conc → 按 **預訓練 / Pretrained** → Detect。隨附的 Open-CD LEVIR-CD 權重已轉成原生 MAT；載入和推論不需 Python、不需重新訓練，也不需額外下載。按鈕將門檻設為 0.5；**New model 仍是隨機初始化**。
+
+Open Change Detection on workspace page three, load the image pair, select FC-Siam-diff/conc and click **Pretrained**, then Detect. Bundled Open-CD LEVIR-CD weights are converted to native MAT: no retraining, Python inference or extra download is required. The button sets threshold to 0.5. **New model still creates random weights.**
+
+![Native pretrained FC-Siam](docs/images/features/fc-siam-pretrained.png)
+
+模型庫的發布者標示 Apache-2.0；發布包含授權文字、NOTICE、固定來源版本與原始／轉換後 SHA-256。兩種模型各五組合成配對的逐像素機率比對已通過。前處理、32 倍數補邊與裁回原尺寸均由 MATLAB 處理，不縮放影像；最多 262144 像素（含補邊）。
+
+The publisher model card declares Apache-2.0. The release includes license text, NOTICE, pinned source revision and original/converted SHA-256. Both variants pass per-pixel probability comparisons on five synthetic pairs each. MATLAB applies normalization, padding to multiples of 32 and cropping back, without resizing; padded inputs are limited to 262144 pixels.
+
+**權重是在遙測建築變化資料上訓練，尚未驗證工業瑕疵檢出率。** 數值轉換一致不代表適合每種產品或光照。
+
+**The checkpoints were trained for remote-sensing building changes; industrial defect accuracy remains unvalidated.** Conversion parity does not establish suitability for every product or lighting condition.
+
+[預訓練權重操作、來源與授權 / Pretrained usage, provenance and license](docs/FC_SIAM_PRETRAINED.md) · [原生架構 / Native architecture](docs/FC_SIAM_NATIVE.md)
+
+範例庫維持暫緩 / The example library remains deferred.
+
+
+### V25 · 原生 BIT-R18 / Native BIT-R18
+
+變化偵測的下拉選單新增 **BIT-R18 / MATLAB**：載入影像 → 選 BIT → 按 **Pretrained** → Detect。隨附 Open-CD LEVIR-CD 預訓練原生 MAT，推論不需 Python、不需重新訓練或額外下載。**New model 是隨機權重。**
+
+Select **BIT-R18 / MATLAB** in Change Detection, load the image pair, click **Pretrained**, then Detect. The bundled native MAT supports direct inference without Python, retraining or another download. **New model creates random weights.**
+
+![Native BIT architecture](docs/images/features/bit-architecture.svg)
+
+![Native BIT pretrained inference](docs/images/features/bit-pretrained.png)
+
+原生架構含共享 ResNetV1c-18、每圖四個語意 token、一層 token encoder、八層 cross-attention decoder。這是 **Open-CD 改良版 BIT**，不是原作者受非商業限制的程式／checkpoint。權重依發布者模型卡的 Apache-2.0 標示整理，附授權、NOTICE 與 SHA-256。
+
+The native architecture includes shared ResNetV1c-18, four semantic tokens per view, one token encoder and eight cross-attention decoder blocks. It is the **Open-CD improved BIT variant**, with publisher-declared Apache-2.0 weights, attribution, license text and hashes; the original BIT author's restricted implementation/checkpoint is not bundled.
+
+五組原創合成輸入的最大機率差約 5.7e-6，0.5 門檻遮罩一致。這是推論數值一致性，**不是工業瑕疵檢出率驗證**。BIT 訓練 API、GPU、compiled standalone 尚未提供／驗證；Open-CD ChangeFormer MiT-B0 變體已於 V25 整合，原作者 V6 未整合，範例庫維持暫緩。
+
+Five original synthetic pairs show maximum probability error around 5.7e-6 and matching threshold-0.5 masks. This establishes inference parity, **not industrial defect accuracy**. BIT training, GPU and compiled standalone are unimplemented/unvalidated; the Open-CD ChangeFormer MiT-B0 variant is integrated; original V6 is not integrated and the example library remains deferred.
+
+[BIT 操作、架構與授權 / BIT architecture, usage and licensing](docs/BIT_NATIVE.md) · [驗證範圍 / Validation](docs/VALIDATION.md)
+
+
+### V25 · Open-CD ChangeFormer MiT-B0 變體 / Native variant
+
+影像變化偵測新增 **Open-CD ChangeFormer MiT-B0**：載入參考／待測照，選該模型，按 **Pretrained** 再 Detect。原生 MATLAB MiT-B0、spatial-reduction attention、MixFFN 與多尺度 SegFormer head 可直接使用隨附 MAT 權重，不需 Python 推論或重新訓練。
+
+Change Detection now includes **Open-CD ChangeFormer MiT-B0**. Load the pair, select the model and click **Pretrained**, then Detect. Native MATLAB MiT-B0, spatial-reduction attention, MixFFN and a multi-scale SegFormer head use the bundled MAT without Python inference or retraining.
+
+![Native Open-CD variant](docs/images/features/changeformer-architecture.svg)
+
+![Native pretrained inference](docs/images/features/changeformer-pretrained.png)
+
+**這是 Open-CD 的 Siamese SegFormer 變體，不是原作者 ChangeFormer V6，也不是原論文的嚴格重製。** 上游明確揭露此差異；本版依模型庫標示 Apache-2.0 的權重整理授權、NOTICE、固定來源版本與 SHA-256。五組原創合成配對的最大機率差約 3.4e-6，0.5 門檻遮罩一致；工業準確率仍需實測。
+
+**This is Open-CD's Siamese SegFormer variant, not original ChangeFormer V6 or a strict paper reproduction.** The upstream README discloses this distinction. Publisher-declared Apache-2.0 weights include attribution/license text, pinned provenance and hashes. Five original synthetic pairs show maximum probability error around 3.4e-6 with matching threshold-0.5 masks; industrial accuracy is unvalidated.
+
+**BIT 標準照用法：**可固定一張標準照逐張比對其他待測照；兩張標準目前需手動切換，不會自動融合或讓模型學習正常外觀。若要驗證準確率，仍需正常／缺陷測試配對與人工真值。
+
+**BIT references:** keep one standard and compare current images one at a time. Switch a second standard manually; references are not fused and do not train normality. Accuracy assessment requires independent normal/changed pairs and reviewed truth.
+
+[原生變體架構、授權與操作 / Variant architecture and licensing](docs/CHANGEFORMER_NATIVE.md) · [標準照與驗證差異 / Reference-pair guide](docs/REFERENCE_PAIR_GUIDE.md)
+
+ChangeFormer 變體訓練 API、GPU、compiled standalone 尚未提供／驗證。範例庫維持暫緩。
+
+Variant training, GPU and compiled standalone are unimplemented/unvalidated. The example library remains deferred.

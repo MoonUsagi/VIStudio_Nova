@@ -2,9 +2,9 @@
 
 [README](../README.md) · [Vision workflows](VISION_WORKFLOWS.md)
 
-從首頁工作區第三頁選「影片 ROI 擷取」，或執行 `VIStudioVideoExtractAppV20`。以串流方式逐影格解碼，不一次把整段影片讀進記憶體。
+從首頁工作區第三頁選「影片 ROI 擷取」，或執行 `VIStudioVideoExtractAppV25`。以串流方式逐影格解碼，不一次把整段影片讀進記憶體。
 
-Open Video ROI on workspace page three or run `VIStudioVideoExtractAppV20`. Extraction decodes frames sequentially without keeping the entire video in memory.
+Open Video ROI on workspace page three or run `VIStudioVideoExtractAppV25`. Extraction decodes frames sequentially without keeping the entire video in memory.
 
 ## 操作 / Workflow
 
@@ -67,6 +67,6 @@ This version supports one fixed rectangular ROI, without tracking, multiple ROIs
 - [hasFrame](https://www.mathworks.com/help/matlab/ref/videoreader.hasframe.html)
 
 
-## V20 navigation / 工作區導航
+## V25 navigation / 工作區導航
 
 Model tasks are on page one, annotation/metrology on page two, and video/stitching/synthesis on page three. The example library is deferred. See [feature analysis](FUTURE_FEATURES.md), [stitching](IMAGE_STITCHING.md) and [synthesis](DEFECT_SYNTHESIS.md).
